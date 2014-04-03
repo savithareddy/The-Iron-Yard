@@ -71,18 +71,42 @@
         self.tableView.rowHeight = 100;
         
         UIView * header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
-        header.backgroundColor = [UIColor darkGrayColor];
+        header.backgroundColor = [UIColor whiteColor];
         
         self.tableView.tableHeaderView = header;
     
-        UITextView * titleHeader = [[UITextView alloc] initWithFrame:CGRectMake(2, 5, 225, 30)];
-                           titleHeader.text = @"IOS Class 2014 ";
-                           titleHeader.textColor = [UIColor whiteColor];
-        titleHeader.textAlignment = UITextAlignmentLeft;
-        titleHeader.font = [UIFont fontWithName:@"Times New Roman" size:17];
-                           [header addSubview:titleHeader];
-        UIButton *button = [UIButton alloc] initWithFrame:CGRectMake(250, 5, 225, 30)
-        button.
+        //UITextView * titleHeader = [[UITextView alloc] initWithFrame:CGRectMake(2, 5, 225, 30)];
+                           //titleHeader.text = @"IOS Class 2014 ";
+                           //titleHeader.textColor = [UIColor whiteColor];
+        //titleHeader.textAlignment = UITextAlignmentLeft;
+        //titleHeader.font = [UIFont fontWithName:@"Times New Roman" size:17];
+                           //[header addSubview:titleHeader];
+                //[button setTitle:@"NewUser" forState:UIControlStateNormal];
+        //[button addTarget:self action:@selector(pressNewUser) forControlEvents:UIControlEventTouchUpInside];
+        
+        
+        UITextField * nameField = [[UITextField alloc] initWithFrame:CGRectMake(20, 20, 200, 30)];
+        nameField.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.05];
+        nameField.layer.cornerRadius = 6;
+        [header addSubview:nameField];
+        
+        UIButton * button = [[UIButton alloc] initWithFrame:CGRectMake(230, 20, 60, 30)];
+        [button setTitle:@"New User" forState:(UIControlStateNormal)];
+        button.font = [UIFont systemFontOfSize:10];
+        button.layer.cornerRadius = 6;
+    
+        button.backgroundColor = [UIColor blackColor];
+        [header addSubview:button];
+        
+        UILabel *titleHeader = [[UILabel alloc] initWithFrame:CGRectMake(20, 50, 280, 30)];
+        titleHeader.text = @"GitHub Users";
+        titleHeader.textColor = [UIColor lightGrayColor];
+        titleHeader.font = [UIFont systemFontOfSize:15];
+        [header addSubview:titleHeader];
+        //button.backgroundColor = [UIColor whiteColor];
+        //button.titleLabel.text = @"NewUser";
+
+        
         
         
         UIView * footer = [[UIView alloc] initWithFrame:CGRectMake(0, 500, 200, 50)];
