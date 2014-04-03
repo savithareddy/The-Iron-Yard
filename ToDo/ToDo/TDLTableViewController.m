@@ -50,15 +50,30 @@
         
         UIView * header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
         header.backgroundColor = [UIColor darkGrayColor];
+        
         self.tableView.tableHeaderView = header;
     
         UILabel * titleHeader = [[UILabel alloc] initWithFrame:CGRectMake(2, 5, 300, 30)];
                            titleHeader.text = @"  IOS Class 2014";
                            titleHeader.textColor = [UIColor whiteColor];
+        titleHeader.textAlignment = UITextAlignmentLeft;
+        titleHeader.font = [UIFont fontWithName:@"Times New Roman" size:17];
                            [header addSubview:titleHeader];
         
-                           
-                           
+        UIView * footer = [[UIView alloc] initWithFrame:CGRectMake(0, 500, 200, 50)];
+        footer.backgroundColor = [UIColor darkGrayColor];
+        
+        self.tableView.tableFooterView = footer;
+        
+        UILabel * titleFooter = [[UILabel alloc] initWithFrame:CGRectMake(10, 20, 300, 30)];
+        titleFooter.text = @" Prepared by TIY-Student";
+        titleFooter.textColor = [UIColor whiteColor];
+        titleFooter.textAlignment = UITextAlignmentRight;
+        titleFooter.font = [UIFont fontWithName:@"Times New Roman" size:10];
+        [footer addSubview:titleFooter];
+
+        
+        
                            
         
         //NSLog(@"listNames : %@ %@ %@ %@ %@ %@ %@ %@ %@ %@ %@ %@ %@ %@ %@", listNames, listNames[0], listNames, listNames, listNames, listNames, listNames, listNames, listNames, listNames,listNames, listNames, listNames, listNames,listNames);

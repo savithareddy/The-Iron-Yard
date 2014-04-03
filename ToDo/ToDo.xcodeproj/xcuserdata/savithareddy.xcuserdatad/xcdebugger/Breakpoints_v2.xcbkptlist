@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ToDo/TDLTableViewController.m"
-            timestampString = "418160252.213741"
+            timestampString = "418187594.510227"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "-initWithStyle:"
             landmarkType = "5">
          </BreakpointContent>
