@@ -9,6 +9,7 @@
 #import "TDLTableViewController.h"
 #import "TDLTableViewCell.h"
 #import "TDLExpand.h"
+#import "TDLNewUser.h"
 
 
 @implementation TDLTableViewController
@@ -92,9 +93,9 @@
         
         UIButton * button = [[UIButton alloc] initWithFrame:CGRectMake(230, 20, 60, 30)];
         [button setTitle:@"New User" forState:(UIControlStateNormal)];
+        [button addTarget:self action:@selector(pressNewUser) forControlEvents:UIControlEventTouchUpInside];
         button.font = [UIFont systemFontOfSize:10];
         button.layer.cornerRadius = 6;
-    
         button.backgroundColor = [UIColor blackColor];
         [header addSubview:button];
         
@@ -140,17 +141,32 @@
 {
     [super viewDidLoad];
     
+    TDLNewUser *button= [[TDLNewUser alloc] init] ;
+    button.frame = CGRectMake(275, 55, 22, 22);
+    [button setTitle:@"-" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(pressNewUser) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
+
+    
+    
     TDLExpand *expand= [[TDLExpand alloc] init] ;
     expand.frame = CGRectMake(275, 55, 22, 22);
     [expand setTitle:@"-" forState:UIControlStateNormal];
     [expand addTarget:self action:@selector(pressExpand) forControlEvents:UIControlEventTouchUpInside];
-    
     [self.view addSubview:expand];
+
         // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+-(void)pressNewUser
+{
+    NSLog(@"New User Entered");
+
 }
 
 -(void)pressExpand

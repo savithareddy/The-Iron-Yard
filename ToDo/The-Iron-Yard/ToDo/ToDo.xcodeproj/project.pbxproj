@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9131C63618EDA798007FD0E0 /* TDLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9131C63518EDA798007FD0E0 /* TDLTableViewCell.m */; };
+		9166D9F218EEE79800CC304F /* TDLNewUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9166D9F118EEE79800CC304F /* TDLNewUser.m */; };
 		91A6AB6218EC4AEA00EDD50D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A6AB6118EC4AEA00EDD50D /* Foundation.framework */; };
 		91A6AB6418EC4AEA00EDD50D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A6AB6318EC4AEA00EDD50D /* CoreGraphics.framework */; };
 		91A6AB6618EC4AEA00EDD50D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A6AB6518EC4AEA00EDD50D /* UIKit.framework */; };
@@ -52,6 +53,8 @@
 /* Begin PBXFileReference section */
 		9131C63418EDA798007FD0E0 /* TDLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDLTableViewCell.h; path = ToDo/TDLTableViewCell.h; sourceTree = "<group>"; };
 		9131C63518EDA798007FD0E0 /* TDLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDLTableViewCell.m; path = ToDo/TDLTableViewCell.m; sourceTree = "<group>"; };
+		9166D9F018EEE79800CC304F /* TDLNewUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDLNewUser.h; sourceTree = "<group>"; };
+		9166D9F118EEE79800CC304F /* TDLNewUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDLNewUser.m; sourceTree = "<group>"; };
 		91A6AB5E18EC4AEA00EDD50D /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A6AB6118EC4AEA00EDD50D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		91A6AB6318EC4AEA00EDD50D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -134,6 +137,8 @@
 		91A6AB5518EC4AEA00EDD50D = {
 			isa = PBXGroup;
 			children = (
+				9166D9F018EEE79800CC304F /* TDLNewUser.h */,
+				9166D9F118EEE79800CC304F /* TDLNewUser.m */,
 				9131C63A18EDA862007FD0E0 /* controllers */,
 				9131C63918EDA853007FD0E0 /* tableview */,
 				91A6AB6718EC4AEA00EDD50D /* ToDo */,
@@ -341,6 +346,7 @@
 			files = (
 				91A6AB9218EC4C7900EDD50D /* TDLTableViewController.m in Sources */,
 				91A6AB6E18EC4AEA00EDD50D /* main.m in Sources */,
+				9166D9F218EEE79800CC304F /* TDLNewUser.m in Sources */,
 				91D7C20F18ECA088006C9E53 /* TDLExpand.m in Sources */,
 				9131C63618EDA798007FD0E0 /* TDLTableViewCell.m in Sources */,
 				91A6AB7218EC4AEA00EDD50D /* TDLAppDelegate.m in Sources */,
