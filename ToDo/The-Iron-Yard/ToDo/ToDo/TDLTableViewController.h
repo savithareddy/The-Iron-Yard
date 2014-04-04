@@ -10,6 +10,6 @@
 
 
 
-@interface TDLTableViewController : UITableViewController
+@interface TDLTableViewController : UITableViewController <UITextFieldDelegate> //adding a protocol
 
 @end

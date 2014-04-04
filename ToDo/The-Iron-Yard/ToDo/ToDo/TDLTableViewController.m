@@ -15,8 +15,11 @@
 @implementation TDLTableViewController
 
 {
-    NSArray *listNames;
+    //NSArray *listNames;
     //NSArray *listImages;
+    NSMutableArray * listNames;
+    UITextField *nameField ;
+    
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -27,8 +30,8 @@
        // NSDictionary * listExample = [[NSDictionary alloc] initWithObjects:@[@"Savitha Reddy"] forKeys:@[@"name"]];
                                       
         //NSDictionary * list = @{@"name":@"Savitha Reddy",@"image":[UIImage imageNamed:@"savithareddy"]};
-        
-        listNames = @[@{@"name" : @"Savitha",@"image" : [UIImage imageNamed : @"Savitha"],@"github": @"https://github.com/savithareddy"},
+
+        listNames = [@[@{@"name" : @"Savitha",@"image" : [UIImage imageNamed : @"Savitha"],@"github": @"https://github.com/savithareddy"},
                       @{@"name" : @"JeffKing",@"image" : [UIImage imageNamed : @"JeffKing" ],@"github": @"https://github.com/rampis"},
                       //@{@"name" : @"ED",@"image" : [UIImage imageNamed : @"ED"]},
                       @{@"name" : @"Jon",@"image" : [UIImage imageNamed : @"Jon"],@"github": @"https://github.com/FoxJon"},
@@ -43,7 +46,9 @@
                       @{@"name" : @"Ashby",@"image" : [UIImage imageNamed : @"Ashby"],@"github": @"https://github.com/athornwell"},
                       @{@"name" : @"Jeffery",@"image" : [UIImage imageNamed : @"Jeffery"],@"github": @"https://github.com/jdmgithub"},
                       @{@"name" : @"Ali",@"image" : [UIImage imageNamed : @"Ali"],@"github": @"https://github.com/HoushmandA06"}
-                      ];
+                      ] mutableCopy];
+        
+        
     
        //listItems = [[NSArray alloc] initWithObjects:@"Monday", @"Tuesday",@"Wednesday",nil]];
     
@@ -67,7 +72,7 @@
                        [UIImage imageNamed:@"Teddy"],
                        [UIImage imageNamed:@"Jon"]]; */
         
-        self.tableView.contentInset = UIEdgeInsetsMake(50, 0, 0, 0);
+        self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
         
         self.tableView.rowHeight = 100;
         
@@ -86,9 +91,12 @@
         //[button addTarget:self action:@selector(pressNewUser) forControlEvents:UIControlEventTouchUpInside];
         
         
-        UITextField * nameField = [[UITextField alloc] initWithFrame:CGRectMake(20, 20, 200, 30)];
+        nameField = [[UITextField alloc] initWithFrame:CGRectMake(20, 20, 200, 30)];
         nameField.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.05];
         nameField.layer.cornerRadius = 6;
+        nameField.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 30)];
+        nameField.leftViewMode = UITextFieldViewModeAlways;
+        nameField.delegate = self;
         [header addSubview:nameField];
         
         UIButton * button = [[UIButton alloc] initWithFrame:CGRectMake(230, 20, 60, 30)];
@@ -147,8 +155,6 @@
     [button addTarget:self action:@selector(pressNewUser) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
-
-    
     
     TDLExpand *expand= [[TDLExpand alloc] init] ;
     expand.frame = CGRectMake(275, 55, 22, 22);
@@ -165,8 +171,24 @@
 
 -(void)pressNewUser
 {
-    NSLog(@"New User Entered");
+    NSString *username = nameField.text;
+    nameField.text = @"";
+    
+    //NSLog(@"%@",username);
+    [listNames addObject:@{
+                           @"name" : username,
+                           //@"image" : [UIImage imageNamed : @"new_user"],
+                           @"github": [NSString stringWithFormat:@"https://github.com/%@",username] }]; // adding a new item @{} to the existing one
+    [nameField resignFirstResponder];
+    [self.tableView reloadData];
+    //NSLog(@"listNames Count : %d", [listNames count]);
+}
 
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    //NSLog (@"return key");
+    [self pressNewUser];
+    return YES;
 }
 
 -(void)pressExpand
@@ -212,15 +234,24 @@
         
     }
    // int index = [indexPath row];
-    int index = indexPath.row;
+    //int index = indexPath.row;
+    
+   // NSArray *reverseArray = [[listNames reverseObjectEnumerator] allObjects];
+    
  //   NSString * name = listNames [index];
     //cell.textLabel.text = name;
     /*NSString * image = listImages [index];
     cell.imageView.image = image;*/
    // cell.backgroundColor = [UIColor grayColor];
+   
+    //NSDictionary * listName = reverseArray[index];
     
-    NSDictionary * listName = listNames[index];
-    cell.profile = listName; // setting profile to the cell
+    //NSDictionary * listName = listNames[index];
+     //NSDictionary *listName = [self getListItem: indexPath.row];
+    //cell.profile = listName; // setting profile to the cell
+    
+    cell.profile = [self getListItem: indexPath.row];
+    
     //cell.textLabel.text = listName[ @"name"]; // cell.textlabel.text = listNames [index] [@"name"]; single line coding
     //cell.imageView.image = listName[ @"image"];
     
@@ -229,54 +260,18 @@
     return cell;
 }
 
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+   // int index = indexPath.row;
+    //NSArray *reverseArray = [[listNames reverseObjectEnumerator] allObjects];
+    //NSDictionary * listName = reverseArray[index];
+    NSDictionary *listName = [self getListItem: indexPath.row];
+    NSLog(@"%@", listName);
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+-(NSDictionary *)getListItem:(NSInteger)row
 {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    NSArray *reverseArray = [[listNames reverseObjectEnumerator] allObjects];
+    return reverseArray[row];
 }
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
