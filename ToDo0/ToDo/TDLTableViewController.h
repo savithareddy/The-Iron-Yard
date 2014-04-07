@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-
-@interface TDLTableViewController : UITableViewController <UITextFieldDelegate> //adding a protocol
+@interface TDLTableViewController : UITableViewController
 
 @end

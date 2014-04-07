@@ -1,5 +1,5 @@
 //
-//  TDLTableViewController.h
+//  TDLAppDelegate.h
 //  ToDo
 //
 //  Created by Savitha Reddy on 4/2/14.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@interface TDLAppDelegate : UIResponder <UIApplicationDelegate>
 
-
-@interface TDLTableViewController : UITableViewController <UITextFieldDelegate> //adding a protocol
+@property (strong, nonatomic) UIWindow *window;
 
 @end

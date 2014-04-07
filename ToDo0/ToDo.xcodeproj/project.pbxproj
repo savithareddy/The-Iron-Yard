@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9131C63618EDA798007FD0E0 /* TDLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9131C63518EDA798007FD0E0 /* TDLTableViewCell.m */; };
-		9166D9F218EEE79800CC304F /* TDLNewUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9166D9F118EEE79800CC304F /* TDLNewUser.m */; };
-		9166D9F418EF333100CC304F /* GitHubFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9166D9F318EF333100CC304F /* GitHubFlow.storyboard */; };
 		91A6AB6218EC4AEA00EDD50D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A6AB6118EC4AEA00EDD50D /* Foundation.framework */; };
 		91A6AB6418EC4AEA00EDD50D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A6AB6318EC4AEA00EDD50D /* CoreGraphics.framework */; };
 		91A6AB6618EC4AEA00EDD50D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A6AB6518EC4AEA00EDD50D /* UIKit.framework */; };
@@ -52,11 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9131C63418EDA798007FD0E0 /* TDLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDLTableViewCell.h; path = ToDo/TDLTableViewCell.h; sourceTree = "<group>"; };
-		9131C63518EDA798007FD0E0 /* TDLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDLTableViewCell.m; path = ToDo/TDLTableViewCell.m; sourceTree = "<group>"; };
-		9166D9F018EEE79800CC304F /* TDLNewUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDLNewUser.h; sourceTree = "<group>"; };
-		9166D9F118EEE79800CC304F /* TDLNewUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDLNewUser.m; sourceTree = "<group>"; };
-		9166D9F318EF333100CC304F /* GitHubFlow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GitHubFlow.storyboard; sourceTree = "<group>"; };
 		91A6AB5E18EC4AEA00EDD50D /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A6AB6118EC4AEA00EDD50D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		91A6AB6318EC4AEA00EDD50D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -73,8 +65,8 @@
 		91A6AB8218EC4AEA00EDD50D /* ToDoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToDoTests-Info.plist"; sourceTree = "<group>"; };
 		91A6AB8418EC4AEA00EDD50D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		91A6AB8618EC4AEA00EDD50D /* ToDoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoTests.m; sourceTree = "<group>"; };
-		91A6AB9018EC4C7900EDD50D /* TDLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDLTableViewController.h; path = ToDo/TDLTableViewController.h; sourceTree = "<group>"; };
-		91A6AB9118EC4C7900EDD50D /* TDLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDLTableViewController.m; path = ToDo/TDLTableViewController.m; sourceTree = "<group>"; };
+		91A6AB9018EC4C7900EDD50D /* TDLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDLTableViewController.h; sourceTree = "<group>"; };
+		91A6AB9118EC4C7900EDD50D /* TDLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDLTableViewController.m; sourceTree = "<group>"; };
 		91D7C1EF18EC8BD5006C9E53 /* ED.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ED.jpeg; sourceTree = "<group>"; };
 		91D7C1F018EC8BD5006C9E53 /* Jon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jon.png; sourceTree = "<group>"; };
 		91D7C1F118EC8BD5006C9E53 /* Jisha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jisha.png; sourceTree = "<group>"; };
@@ -118,32 +110,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9131C63918EDA853007FD0E0 /* tableview */ = {
-			isa = PBXGroup;
-			children = (
-				9131C63418EDA798007FD0E0 /* TDLTableViewCell.h */,
-				9131C63518EDA798007FD0E0 /* TDLTableViewCell.m */,
-			);
-			name = tableview;
-			sourceTree = "<group>";
-		};
-		9131C63A18EDA862007FD0E0 /* controllers */ = {
-			isa = PBXGroup;
-			children = (
-				91A6AB9018EC4C7900EDD50D /* TDLTableViewController.h */,
-				91A6AB9118EC4C7900EDD50D /* TDLTableViewController.m */,
-				9166D9F318EF333100CC304F /* GitHubFlow.storyboard */,
-			);
-			name = controllers;
-			sourceTree = "<group>";
-		};
 		91A6AB5518EC4AEA00EDD50D = {
 			isa = PBXGroup;
 			children = (
-				9166D9F018EEE79800CC304F /* TDLNewUser.h */,
-				9166D9F118EEE79800CC304F /* TDLNewUser.m */,
-				9131C63A18EDA862007FD0E0 /* controllers */,
-				9131C63918EDA853007FD0E0 /* tableview */,
 				91A6AB6718EC4AEA00EDD50D /* ToDo */,
 				91A6AB8018EC4AEA00EDD50D /* ToDoTests */,
 				91A6AB6018EC4AEA00EDD50D /* Frameworks */,
@@ -177,6 +146,8 @@
 				91D7C1EE18EC8B51006C9E53 /* Images */,
 				91A6AB7018EC4AEA00EDD50D /* TDLAppDelegate.h */,
 				91A6AB7118EC4AEA00EDD50D /* TDLAppDelegate.m */,
+				91A6AB9018EC4C7900EDD50D /* TDLTableViewController.h */,
+				91A6AB9118EC4C7900EDD50D /* TDLTableViewController.m */,
 				91D7C20D18ECA088006C9E53 /* TDLExpand.h */,
 				91D7C20E18ECA088006C9E53 /* TDLExpand.m */,
 				91A6AB7318EC4AEA00EDD50D /* Images.xcassets */,
@@ -323,7 +294,6 @@
 				91D7C20518EC8BD5006C9E53 /* TJ.png in Resources */,
 				91D7C20218EC8BD5006C9E53 /* Heidi.png in Resources */,
 				91D7C20B18EC8BD5006C9E53 /* Jeffery.png in Resources */,
-				9166D9F418EF333100CC304F /* GitHubFlow.storyboard in Resources */,
 				91D7C20318EC8BD5006C9E53 /* Teddy.png in Resources */,
 				91D7C20618EC8BD5006C9E53 /* Derek.png in Resources */,
 				91D7C20A18EC8BD5006C9E53 /* Ashby.png in Resources */,
@@ -350,9 +320,7 @@
 			files = (
 				91A6AB9218EC4C7900EDD50D /* TDLTableViewController.m in Sources */,
 				91A6AB6E18EC4AEA00EDD50D /* main.m in Sources */,
-				9166D9F218EEE79800CC304F /* TDLNewUser.m in Sources */,
 				91D7C20F18ECA088006C9E53 /* TDLExpand.m in Sources */,
-				9131C63618EDA798007FD0E0 /* TDLTableViewCell.m in Sources */,
 				91A6AB7218EC4AEA00EDD50D /* TDLAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

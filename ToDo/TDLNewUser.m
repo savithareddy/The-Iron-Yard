@@ -1,22 +1,22 @@
 //
-//  TDLExpand.m
+//  TDLNewUser.m
 //  ToDo
 //
-//  Created by Savitha Reddy on 4/2/14.
+//  Created by Savitha Reddy on 4/4/14.
 //  Copyright (c) 2014 Savitha. All rights reserved.
 //
 
-#import "TDLExpand.h"
+#import "TDLNewUser.h"
 
-@implementation TDLExpand
+@implementation TDLNewUser
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.backgroundColor=[UIColor redColor];
-        //self.layer.cornerRadius = 10;
+        //self.backgroundColor=[UIColor redColor];
+
     }
     return self;
 }

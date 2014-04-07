@@ -1,5 +1,5 @@
 //
-//  TDLTableViewController.h
+//  TDLExpand.h
 //  ToDo
 //
 //  Created by Savitha Reddy on 4/2/14.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@interface TDLExpand : UIButton
 
 
-@interface TDLTableViewController : UITableViewController <UITextFieldDelegate> //adding a protocol
 
 @end
