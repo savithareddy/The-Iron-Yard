@@ -1,4 +1,4 @@
-1. Fotopedia - Travel - Mar27,2014
+1. Fotopedia - Travel 
 
 		-Information Organization is excellent.
 		-small semicircle is provided to showup options for sharing in an animated style.
@@ -7,7 +7,7 @@
 		-Tutorial provided on creating your own story. 
 		-Problem with message button staying on until the same button is hit again.
 		 
-2. 30/30- Productivity - Feb11, 2014
+2. 30/30- Productivity  
 
 		- visual aspect is very clean. Very easy for a senior citizen to utilize this app.
 		-colored, bold and very simple styling.
@@ -15,7 +15,7 @@
 		-many touch events used for accessing the lists.
 		-Problem is that it takes sometime to get to remember the touch events or get used to.
 		 
-3. Quick Graph - Education - Sep26,2013
+3. Quick Graph - Education 
 
 		- 2D and 3D mathematical graphs good for high school students to better understand 		spacial systems 
 		-The selected color system is light 
@@ -23,7 +23,7 @@
 		-3D shows up in bold solid colors.
 
 
-4. Tynker- Education- Mar27, 2014
+4. Tynker- Education
 
 		-animation is good.
 		-Concept of visual way to learn basic programming for kids is excellent.
@@ -31,7 +31,7 @@
 		-top right navigation button is not well designed.
 		
 		
-5. Thirtyaday fitness- Health&Fitness- Mar21, 2014
+5. Thirtyaday fitness
 
 		-Lots of information organized in very simple way.
 		-Colors are well thought of.
@@ -39,7 +39,7 @@
 		-Only problem is that the info button is at the very bottom corner which is not very 		visible.
 		
 		
-6. StockTouch- Finance - Sep30, 2013
+6. StockTouch- Finance 
 
 		-Best App showing the highest data at one look.
 		-Color representation is very good. Can easily identity what we are looking for.
@@ -49,7 +49,7 @@
 		-Support and tutorial also well planned.
 	
 		
-7. wezzoo- weather- Jan30, 2014
+7. wezzoo- weather
 
 		-very good way of updating real-time weather by a person anywhere in the world.
 		-representing the season as an icon in round shape is very appealing. Also the round 		icon shows the person, location as well as the like or dislike option.
@@ -58,7 +58,7 @@
 		-Bottom left has an icon to close left hand column, not understandable.
 		-Search criteria is easy to work on.
 		
-8. iExit- Travel- Mar27, 2014
+8. iExit- Travel
 
 		-symbols along with their description is provided.
 		-the colors for symbols, exits and others are appropriate.
@@ -66,5 +66,21 @@
 		-works best only if current location is provided.
 		-allows to add additional info by any person for any exit.
 		
-9. Makr- Lifestyle - Mar23, 2014
-10. Flipagram- Photo&Video -Mar28, 2014
+9. Makr- Lifestyle 
+
+		-App is well organized with the menu button placed at the top left and the selection 		button at the top right.
+		-5 slides are set to keep moving on start of the application showing some tips and 		what the app does.
+		-Top bar also has some menu buttons for easier naviagtion.
+		-The colors and the design is excellent. 
+		-Tutorial and the support are provided well.
+		
+10. artCircles- LifeStyle
+	
+		-Start of the app is awesome showing some animation from a picture to color logo and 		then Black and white logo.
+		-Square images are placed around circles in groups and each picture on rotating sets 		itself at its corresponding gallery.
+		-At the of meet of the picture and gallery, small description is provided to view the 		gallery.
+		-Although the symbols on the main menu are small, they are well visible and 		understandable.
+		-The App navigation is well organised and designed. 
+		-Checking the picture on your wall option is created well.
+		-The Buttons and the layout is aptly planned.
+		
