@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>438B807F-9BEA-4A42-A3C4-F04D08E77049</string>
+	<string>593269CD-D3BC-42FF-8B52-1ED9ECCA3117</string>
 	<key>IDESourceControlProjectName</key>
 	<string>April1</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>871D1230-A365-43F6-8EA1-A1FF42D7D5E0</key>
-		<string>https://github.com/savithareddy/iOS-project.git</string>
+		<key>F61019C3-78A2-4817-BE5F-CCD1D38D8FA4</key>
+		<string>https://github.com/savithareddy/The-Iron-Yard.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>April1/April1.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>871D1230-A365-43F6-8EA1-A1FF42D7D5E0</key>
+		<key>F61019C3-78A2-4817-BE5F-CCD1D38D8FA4</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/savithareddy/iOS-project.git</string>
+	<string>https://github.com/savithareddy/The-Iron-Yard.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>871D1230-A365-43F6-8EA1-A1FF42D7D5E0</string>
+	<string>F61019C3-78A2-4817-BE5F-CCD1D38D8FA4</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>871D1230-A365-43F6-8EA1-A1FF42D7D5E0</string>
+			<string>F61019C3-78A2-4817-BE5F-CCD1D38D8FA4</string>
 			<key>IDESourceControlWCCName</key>
-			<string>iOS-project</string>
+			<string>The-Iron-Yard</string>
 		</dict>
 	</array>
 </dict>

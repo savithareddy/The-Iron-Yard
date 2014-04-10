@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9131C63618EDA798007FD0E0 /* TDLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9131C63518EDA798007FD0E0 /* TDLTableViewCell.m */; };
+		91343F4A18F2F43F005B3199 /* TDLGitHubRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 91343F4918F2F43F005B3199 /* TDLGitHubRequest.m */; };
 		9166D9F218EEE79800CC304F /* TDLNewUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9166D9F118EEE79800CC304F /* TDLNewUser.m */; };
 		9166D9F418EF333100CC304F /* GitHubFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9166D9F318EF333100CC304F /* GitHubFlow.storyboard */; };
 		91A6AB6218EC4AEA00EDD50D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A6AB6118EC4AEA00EDD50D /* Foundation.framework */; };
@@ -54,6 +55,8 @@
 /* Begin PBXFileReference section */
 		9131C63418EDA798007FD0E0 /* TDLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDLTableViewCell.h; path = ToDo/TDLTableViewCell.h; sourceTree = "<group>"; };
 		9131C63518EDA798007FD0E0 /* TDLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDLTableViewCell.m; path = ToDo/TDLTableViewCell.m; sourceTree = "<group>"; };
+		91343F4818F2F43F005B3199 /* TDLGitHubRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDLGitHubRequest.h; sourceTree = "<group>"; };
+		91343F4918F2F43F005B3199 /* TDLGitHubRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDLGitHubRequest.m; sourceTree = "<group>"; };
 		9166D9F018EEE79800CC304F /* TDLNewUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDLNewUser.h; sourceTree = "<group>"; };
 		9166D9F118EEE79800CC304F /* TDLNewUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDLNewUser.m; sourceTree = "<group>"; };
 		9166D9F318EF333100CC304F /* GitHubFlow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GitHubFlow.storyboard; sourceTree = "<group>"; };
@@ -132,9 +135,19 @@
 			children = (
 				91A6AB9018EC4C7900EDD50D /* TDLTableViewController.h */,
 				91A6AB9118EC4C7900EDD50D /* TDLTableViewController.m */,
+				91343F4718F2F3CB005B3199 /* Random */,
 				9166D9F318EF333100CC304F /* GitHubFlow.storyboard */,
 			);
 			name = controllers;
+			sourceTree = "<group>";
+		};
+		91343F4718F2F3CB005B3199 /* Random */ = {
+			isa = PBXGroup;
+			children = (
+				91343F4818F2F43F005B3199 /* TDLGitHubRequest.h */,
+				91343F4918F2F43F005B3199 /* TDLGitHubRequest.m */,
+			);
+			name = Random;
 			sourceTree = "<group>";
 		};
 		91A6AB5518EC4AEA00EDD50D = {
@@ -348,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91343F4A18F2F43F005B3199 /* TDLGitHubRequest.m in Sources */,
 				91A6AB9218EC4C7900EDD50D /* TDLTableViewController.m in Sources */,
 				91A6AB6E18EC4AEA00EDD50D /* main.m in Sources */,
 				9166D9F218EEE79800CC304F /* TDLNewUser.m in Sources */,

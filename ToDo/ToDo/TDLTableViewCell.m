@@ -13,6 +13,7 @@
     UIImageView * profileImage;
     UILabel * profileName;
     UILabel * profileURL;
+    
 }
 
 //@synthesize profile=_profile; // to overwrite one of the setter or getter then _profile can e used else synthesiszing is required
@@ -53,11 +54,20 @@
 
 -(void) setProfile:(NSDictionary *)profile // Setter
 {
-   // if(profile !=nil)
+        NSURL *imageUrl = [NSURL URLWithString:profile[@"image"]];
+
+    NSData * imageData = [NSData dataWithContentsOfURL:imageUrl];
+    //UIImage *image = [UIImage imageWithData:imageData];
     
+    //profileImage.image = profile[@"image"];
+    profileURL.text = profile[@"github"];
+    profileName.text = profile[@"name"];
+   // if(profile !=nil)
+    UIImage * image = [UIImage imageWithData:imageData];
     //UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 60, 60)];
     //imageView.image = profile[@"image"];
-    profileImage.image = profile[@"image"];
+    //profileImage.image = profile[@"image"];
+     profileImage.image = image;
     //imageView.layer.cornerRadius=30;
     //imageView.layer.masksToBounds=YES;
     //[self.contentView addSubview:imageView];
