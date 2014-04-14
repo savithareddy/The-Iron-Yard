@@ -39,7 +39,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    gameSize=4;
+    gameSize=7;
    float circleWidth = SCREEN_WIDTH/gameSize;
     float squareWidth = circleWidth/2;
     
