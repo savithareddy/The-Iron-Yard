@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "91790A8218F823D900865FE4"
-               BuildableName = "&#x25a2;s &amp; &#x25ef;s.app"
-               BlueprintName = "&#x25a2;s &amp; &#x25ef;s"
-               ReferencedContainer = "container:Squares.xcodeproj">
+               BlueprintIdentifier = "91165AD518FA5AC800199B26"
+               BuildableName = "AppTweet.app"
+               BlueprintName = "AppTweet"
+               ReferencedContainer = "container:AppTweet.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "91790A9D18F823DA00865FE4"
-               BuildableName = "SquaresTests.xctest"
-               BlueprintName = "SquaresTests"
-               ReferencedContainer = "container:Squares.xcodeproj">
+               BlueprintIdentifier = "91165AF018FA5AC800199B26"
+               BuildableName = "AppTweetTests.xctest"
+               BlueprintName = "AppTweetTests"
+               ReferencedContainer = "container:AppTweet.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "91790A8218F823D900865FE4"
-            BuildableName = "&#x25a2;s &amp; &#x25ef;s.app"
-            BlueprintName = "&#x25a2;s &amp; &#x25ef;s"
-            ReferencedContainer = "container:Squares.xcodeproj">
+            BlueprintIdentifier = "91165AD518FA5AC800199B26"
+            BuildableName = "AppTweet.app"
+            BlueprintName = "AppTweet"
+            ReferencedContainer = "container:AppTweet.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "91790A8218F823D900865FE4"
-            BuildableName = "&#x25a2;s &amp; &#x25ef;s.app"
-            BlueprintName = "&#x25a2;s &amp; &#x25ef;s"
-            ReferencedContainer = "container:Squares.xcodeproj">
+            BlueprintIdentifier = "91165AD518FA5AC800199B26"
+            BuildableName = "AppTweet.app"
+            BlueprintName = "AppTweet"
+            ReferencedContainer = "container:AppTweet.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "91790A8218F823D900865FE4"
-            BuildableName = "&#x25a2;s &amp; &#x25ef;s.app"
-            BlueprintName = "&#x25a2;s &amp; &#x25ef;s"
-            ReferencedContainer = "container:Squares.xcodeproj">
+            BlueprintIdentifier = "91165AD518FA5AC800199B26"
+            BuildableName = "AppTweet.app"
+            BlueprintName = "AppTweet"
+            ReferencedContainer = "container:AppTweet.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
