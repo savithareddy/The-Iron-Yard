@@ -11,6 +11,7 @@
 @implementation SDGCircle
 {
     UIColor *dotColor; //added
+    float dotWidth;
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -20,6 +21,8 @@
         // Initialization code
         self.backgroundColor = [UIColor clearColor];
         dotColor = [UIColor colorWithWhite:0.95 alpha:1.0]; //added to make the colors lighter shade
+        dotWidth = frame.size.width/5 ;
+        
     }
     return self;
 }
@@ -32,8 +35,9 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     [dotColor set];
     //[[UIColor lightGrayColor] set];
-    float dotXY = (self.frame.size.width - 20) /2;
-    CGContextAddEllipseInRect(context, CGRectMake(dotXY, dotXY, 20, 20));
+    float dotXY = ((self.frame.size.width-dotWidth)/2);
+    //NSLog(@"%f", dotXY);
+    CGContextAddEllipseInRect(context, CGRectMake(dotXY, dotXY, dotWidth, dotWidth));
     CGContextFillPath(context);
 }
 
@@ -41,7 +45,7 @@
 {
     dotColor = [self.delegate circleTappedWithPosition:self.position]; //asks for current color from VC while giving position of tapped circle
     [self setNeedsDisplay];//redraws layer calling the drawRect method above //
-    NSLog(@"my position is col %d, row %d",(int)self.position.x, (int)self.position.y);
+    //NSLog(@"my position is col %d, row %d",(int)self.position.x, (int)self.position.y);
 }
 
 @end
