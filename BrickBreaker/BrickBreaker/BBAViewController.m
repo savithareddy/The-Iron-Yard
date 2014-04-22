@@ -19,6 +19,8 @@
     UIButton *startButton;
     UILabel *pointsLabel;
     UILabel *livesLabel;
+    UIView *header;
+    
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -52,6 +54,21 @@
     
 }
 
+//-(void) updatePoints:(int) points
+//{
+//    header.currentScore = points;
+//    if(header.currentScore > topScore)
+//    {
+//        topScore = header.currentScore;
+//        newHighScore = YES;
+//        //update my default value
+//        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+//        [userDefaults setObject:@(topscore) forKey:@"topScore"];
+//        [userDefaults synchronize]; //to saves any value // userDefaults to system settings
+//        
+//    }
+//}
+
 -(void) gameDone
 {
     [level.view removeFromSuperview];
@@ -62,7 +79,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH,40)];
+//    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+//    topScore = [[userDefaults objectForKey:@"topScore"]intValue];
+//    
+    header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH,40)];
     header.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:header];
     

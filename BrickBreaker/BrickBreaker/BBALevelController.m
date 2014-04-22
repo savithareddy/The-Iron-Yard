@@ -8,7 +8,7 @@
 
 #import "BBALevelController.h"
 
-@interface BBALevelController () <UICollisionBehaviorDelegate> //added this < >//private interface // @property in .h file is global
+@interface BBALevelController () <UICollisionBehaviorDelegate,UIAlertViewDelegate> //added this < >//private interface // @property in .h file is global
 @property (nonatomic) UIView *paddle;
 @property (nonatomic) NSMutableArray *balls;
 @property (nonatomic) NSMutableArray *bricks;
@@ -105,20 +105,27 @@
     {
         UIView * ball =(UIView *) item1;
        [ball removeFromSuperview];
+        [self.collider removeItem:ball];
        --lives;
         if([self.delegate respondsToSelector:@selector(reduceLives:)]) [self.delegate reduceLives:lives];
+        
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@" Ball Missed " message:@" 1 life reduced " delegate:self cancelButtonTitle:@" ok " otherButtonTitles:nil];
         [alertView show];
-        [self.view addSubview:ball];
-        [self.animator addBehavior:self.collider];
+        alertView.delegate = self;
+//        [self.view addSubview:ball];
+//        [self.animator addBehavior:self.collider];
         if (lives <= 0) {
-            [self.collider removeItem:ball];
             if ([self.delegate respondsToSelector:@selector(gameDone)]) [self.delegate gameDone];
 
         }
         
     }
     
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if(lives > 0) [self createBall];
 }
 
 
@@ -228,6 +235,10 @@ self.paddle = [[UIView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH - paddleWid
     [self.view addSubview:ball];
     //add balls to the balls array
     [self.balls addObject:ball];
+    
+    [self.collider addItem:ball];
+    [self.ballsDynamicProperties addItem:ball];
+    
     //start ball off with a push
     self.pusher =[[UIPushBehavior alloc] initWithItems:self.balls mode:UIPushBehaviorModeInstantaneous];
     self.pusher.pushDirection = CGVectorMake(0.01, 0.01); //nos says the direction amount is the speed // quadrant style

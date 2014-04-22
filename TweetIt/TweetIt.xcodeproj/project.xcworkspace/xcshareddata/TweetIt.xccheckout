@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>4398F3BF-9998-47C6-AAFB-165E50D9042B</string>
+	<string>C4E01FC7-BAD5-4049-BD9E-F8A61156F630</string>
 	<key>IDESourceControlProjectName</key>
-	<string>ToDo</string>
+	<string>TweetIt</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>F61019C3-78A2-4817-BE5F-CCD1D38D8FA4</key>
 		<string>https://github.com/savithareddy/The-Iron-Yard.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ToDo0/ToDo.xcodeproj/project.xcworkspace</string>
+	<string>TweetIt/TweetIt.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>F61019C3-78A2-4817-BE5F-CCD1D38D8FA4</key>
