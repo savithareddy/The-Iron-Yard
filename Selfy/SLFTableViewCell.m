@@ -19,21 +19,21 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        selfyView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 280, 280)];
-        selfyView.contentMode = UIViewContentModeScaleAspectFill;
-        selfyView.clipsToBounds = YES;
+        selfyView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 60, 280, 280)];
+        //selfyView.contentMode = UIViewContentModeScaleAspectFill;
+        //selfyView.clipsToBounds = YES;
         selfyView.layer.masksToBounds=YES;
        [self.contentView addSubview:selfyView];
         
-        selfyCaption = [[UILabel alloc] initWithFrame:CGRectMake(70, 300, 100, 100)];
-        selfyCaption.text = @"Awesome !!!";
+        selfyCaption = [[UILabel alloc] initWithFrame:CGRectMake(70, 350, 100, 30)];
+        //selfyCaption.text = @"Awesome !!!";
         selfyCaption.font = [UIFont fontWithName:@"Times New Roman" size:15];
        [self.contentView addSubview:selfyCaption];
         
-        avatarView =[[UIImageView alloc] initWithFrame:CGRectMake(20, 300, 30, 30)];
+        avatarView =[[UIImageView alloc] initWithFrame:CGRectMake(30, 350, 30, 30)];
         avatarView.layer.cornerRadius = 15;
-        avatarView.contentMode = UIViewContentModeScaleAspectFill;
-        avatarView.clipsToBounds = YES;
+        //avatarView.contentMode = UIViewContentModeScaleAspectFill;
+       // avatarView.clipsToBounds = YES;
         avatarView.layer.masksToBounds=YES;
         [self.contentView addSubview:avatarView];
         
@@ -45,7 +45,8 @@
 {
     _selfyInfo = selfyInfo;
     
-    selfyCaption = selfyInfo[@"caption"];
+    selfyCaption.text = selfyInfo[@"caption"];
+    //selfyUserID.text = selfyInfo[@"user_ID"];
     
     NSURL *imageURL = [NSURL URLWithString:selfyInfo[@"image"]];
     NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
