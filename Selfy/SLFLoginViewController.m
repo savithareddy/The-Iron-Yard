@@ -72,9 +72,9 @@
 -(void) pressSubmit
 {
     
-    //SLFTableViewController *viewController1 = [[SLFTableViewController alloc] initWithStyle:UITableViewStylePlain];
-    //[self.navigationController pushViewController:viewController1 animated:YES];
-    userName.text = @"";
+    SLFTableViewController *viewController1 = [[SLFTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    [self.navigationController pushViewController:viewController1 animated:YES];
+       userName.text = @"";
     password.text = @"";
     [userName resignFirstResponder];
     [password resignFirstResponder];

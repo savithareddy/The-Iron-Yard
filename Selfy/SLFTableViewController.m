@@ -110,6 +110,8 @@
     SLFCameraViewController *viewController2 = [[SLFCameraViewController alloc]initWithNibName:nil bundle:nil];
     //UINavigationController *navController2 = [[UINavigationController alloc]initWithRootViewController:viewController2];
     [self.navigationController pushViewController:viewController2 animated:YES];
+//    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+
 }
 - (void)didReceiveMemoryWarning
 {
