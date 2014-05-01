@@ -7,15 +7,19 @@
 //
 
 #import "PPAViewController.h"
+#import "PPAFilterController.h"
 
 
-@interface PPAViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface PPAViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate,PPAFilterControllerDelegate>
+
+@property (nonatomic) UIImage *originalImage; //required for many instances //local to this file 
 
 @end
 
 @implementation PPAViewController
 {
     UIImageView *imageView;
+    PPAFilterController *filterVC; //setting this global
     
 }
 
@@ -46,33 +50,29 @@
     libraryButton.backgroundColor = [UIColor grayColor];
     [navBar addSubview:libraryButton];
     
-    UIView *suspenceView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT-140, SCREEN_WIDTH, 40)];
-    suspenceView.backgroundColor = [UIColor lightGrayColor];
-    [self.view addSubview:suspenceView];
+//    UIView *suspenceView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT-140, SCREEN_WIDTH, 40)];
+//    suspenceView.backgroundColor = [UIColor lightGrayColor];
+//    [self.view addSubview:suspenceView];
+//    
     
-    UIScrollView *footBar = [[UIScrollView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT-100, SCREEN_WIDTH, 100)];
-    //footBar.pagingEnabled = YES;
-    footBar.backgroundColor = [UIColor yellowColor];
-    
-    int squares = 20;
-    for (int i=0; i<squares; i++) {
-        
-        int X =  (10 + 80) * i;
-        UIButton *buttons1 = [[UIButton alloc] initWithFrame:CGRectMake(X+10, 10, 80, 80)];
-       buttons1.backgroundColor=[UIColor whiteColor];
-        [buttons1 setImage:imageView.image forState:UIControlStateNormal];
-        [buttons1 addTarget:self action:@selector(clickButton) forControlEvents:UIControlEventTouchUpInside];
-       [footBar addSubview:buttons1];
-    }
-    footBar.contentSize = CGSizeMake((90*squares+10), 100);
-    [self.view addSubview:footBar];
+    filterVC = [[PPAFilterController alloc] initWithNibName:nil bundle:nil];
+    filterVC.delegate = self;
+    filterVC.view.frame = CGRectMake(0, SCREEN_HEIGHT-100, SCREEN_WIDTH, 100);
+    [self.view addSubview:filterVC.view];
     
     
 }
 
--(void) clickButton
+-(void)updateCurrentImageWithFilteredImage:(UIImage *)image
 {
-    
+    imageView.image = image;
+}
+
+-(void) setOriginalImage:(UIImage *)originalImage
+{
+    _originalImage=originalImage;
+    filterVC.imageToFilter = originalImage;
+    imageView.image=originalImage;
 }
 
 -(void) choosePhoto
@@ -92,25 +92,26 @@
 {
     //NSLog(@"%@",info);
    // NSLog(@"%@", info[UIImagePickerControllerOriginalImage]);
-    imageView.image = info[UIImagePickerControllerOriginalImage];
+    
+    
+    self.originalImage = info[UIImagePickerControllerOriginalImage];
+    
+    
     [picker dismissViewControllerAnimated:YES completion:^{
         
     }];
-    UIImage *image = imageView.image;
-    CIContext *context = [CIContext contextWithOptions:nil];
-    CIImage *rawImageData = [CIImage imageWithCGImage:image.CGImage];
-    CIFilter *filter = [CIFilter filterWithName:@"CIPhotoEffectMono"];
-    [filter setValue:rawImageData forKey:kCIInputImageKey];
-    //[filter setValue:@(intensity) forKey:@"inputIntensity"];
-    CIImage *filteredImageData = [filter valueForKey:kCIOutputImageKey];
-    CGImageRef cgImgRef = [context createCGImage:filteredImageData fromRect:[filteredImageData extent]];
-    UIImage *newImage = [UIImage imageWithCGImage:cgImgRef];
-    CGImageRelease(cgImgRef);
-    imageView.image = newImage;
+//    UIImage *image = imageView.image;
+//    CIContext *context = [CIContext contextWithOptions:nil];
+//    CIImage *rawImageData = [CIImage imageWithCGImage:image.CGImage];
+//    CIFilter *filter = [CIFilter filterWithName:@"CIPhotoEffectMono"];
+//    [filter setValue:rawImageData forKey:kCIInputImageKey];
+//    //[filter setValue:@(intensity) forKey:@"inputIntensity"];
+//    CIImage *filteredImageData = [filter valueForKey:kCIOutputImageKey];
+//    CGImageRef cgImgRef = [context createCGImage:filteredImageData fromRect:[filteredImageData extent]];
+//    UIImage *newImage = [UIImage imageWithCGImage:cgImgRef];
+//    CGImageRelease(cgImgRef);
+//    imageView.image = newImage;
 }
-
-
-
 
 
 - (void)didReceiveMemoryWarning

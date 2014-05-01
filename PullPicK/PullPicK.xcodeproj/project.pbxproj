@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		91985E3C1911F677007458FC /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91985E3B1911F677007458FC /* CoreImage.framework */; };
+		9198CDEE1912834E003D4C08 /* PPAFilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9198CDED1912834E003D4C08 /* PPAFilterController.m */; };
+		9198CDF019129FA2003D4C08 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9198CDEF19129FA2003D4C08 /* AssetsLibrary.framework */; };
 		91A0671A19116DE800F0A540 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A0671919116DE800F0A540 /* Foundation.framework */; };
 		91A0671C19116DE800F0A540 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A0671B19116DE800F0A540 /* CoreGraphics.framework */; };
 		91A0671E19116DE800F0A540 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A0671D19116DE800F0A540 /* UIKit.framework */; };
@@ -35,6 +37,9 @@
 
 /* Begin PBXFileReference section */
 		91985E3B1911F677007458FC /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		9198CDEC1912834E003D4C08 /* PPAFilterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAFilterController.h; sourceTree = "<group>"; };
+		9198CDED1912834E003D4C08 /* PPAFilterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAFilterController.m; sourceTree = "<group>"; };
+		9198CDEF19129FA2003D4C08 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		91A0671619116DE800F0A540 /* PullPicK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PullPicK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A0671919116DE800F0A540 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		91A0671B19116DE800F0A540 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9198CDF019129FA2003D4C08 /* AssetsLibrary.framework in Frameworks */,
 				91985E3C1911F677007458FC /* CoreImage.framework in Frameworks */,
 				91A0671C19116DE800F0A540 /* CoreGraphics.framework in Frameworks */,
 				91A0671E19116DE800F0A540 /* UIKit.framework in Frameworks */,
@@ -85,6 +91,8 @@
 			children = (
 				91A0674819116E0700F0A540 /* PPAViewController.h */,
 				91A0674919116E0700F0A540 /* PPAViewController.m */,
+				9198CDEC1912834E003D4C08 /* PPAFilterController.h */,
+				9198CDED1912834E003D4C08 /* PPAFilterController.m */,
 				91A0671F19116DE800F0A540 /* PullPicK */,
 				91A0673819116DE900F0A540 /* PullPicKTests */,
 				91A0671819116DE800F0A540 /* Frameworks */,
@@ -104,6 +112,7 @@
 		91A0671819116DE800F0A540 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9198CDEF19129FA2003D4C08 /* AssetsLibrary.framework */,
 				91985E3B1911F677007458FC /* CoreImage.framework */,
 				91A0671919116DE800F0A540 /* Foundation.framework */,
 				91A0671B19116DE800F0A540 /* CoreGraphics.framework */,
@@ -252,6 +261,7 @@
 				91A0672A19116DE800F0A540 /* PPAAppDelegate.m in Sources */,
 				91A0674A19116E0700F0A540 /* PPAViewController.m in Sources */,
 				91A0672619116DE800F0A540 /* main.m in Sources */,
+				9198CDEE1912834E003D4C08 /* PPAFilterController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,5 @@
 
 @interface PPAViewController : UIViewController
 
--(void) filterImage;
 
 @end
