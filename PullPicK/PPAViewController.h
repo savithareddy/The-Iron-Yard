@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreImage/CoreImage.h>
+
+
 
 @interface PPAViewController : UIViewController
+
+-(void) filterImage;
 
 @end
