@@ -23,6 +23,12 @@
 		91A0673D19116DE900F0A540 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91A0673B19116DE900F0A540 /* InfoPlist.strings */; };
 		91A0673F19116DE900F0A540 /* PullPicKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A0673E19116DE900F0A540 /* PullPicKTests.m */; };
 		91A0674A19116E0700F0A540 /* PPAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A0674919116E0700F0A540 /* PPAViewController.m */; };
+		91F8BF1719141CD1008ED7B9 /* blur.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F8BF1219141CD1008ED7B9 /* blur.png */; };
+		91F8BF1819141CD1008ED7B9 /* HSB.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F8BF1319141CD1008ED7B9 /* HSB.png */; };
+		91F8BF1919141CD1008ED7B9 /* filter.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F8BF1419141CD1008ED7B9 /* filter.png */; };
+		91F8BF1A19141CD1008ED7B9 /* ControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F8BF1619141CD1008ED7B9 /* ControlsViewController.m */; };
+		91F8BF3119142D4A008ED7B9 /* HSBColorControlVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F8BF1D19142D4A008ED7B9 /* HSBColorControlVC.m */; };
+		91F8BF4219142DD1008ED7B9 /* BlurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F8BF4119142DD1008ED7B9 /* BlurViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +64,15 @@
 		91A0673E19116DE900F0A540 /* PullPicKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PullPicKTests.m; sourceTree = "<group>"; };
 		91A0674819116E0700F0A540 /* PPAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAViewController.h; sourceTree = "<group>"; };
 		91A0674919116E0700F0A540 /* PPAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAViewController.m; sourceTree = "<group>"; };
+		91F8BF1219141CD1008ED7B9 /* blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blur.png; path = ../../../../Desktop/blur.png; sourceTree = "<group>"; };
+		91F8BF1319141CD1008ED7B9 /* HSB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HSB.png; path = ../../../../Desktop/HSB.png; sourceTree = "<group>"; };
+		91F8BF1419141CD1008ED7B9 /* filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = filter.png; path = ../../../../Desktop/filter.png; sourceTree = "<group>"; };
+		91F8BF1519141CD1008ED7B9 /* ControlsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ControlsViewController.h; path = ../../../../Desktop/ControlsViewController.h; sourceTree = "<group>"; };
+		91F8BF1619141CD1008ED7B9 /* ControlsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ControlsViewController.m; path = ../../../../Desktop/ControlsViewController.m; sourceTree = "<group>"; };
+		91F8BF1C19142D4A008ED7B9 /* HSBColorControlVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSBColorControlVC.h; sourceTree = "<group>"; };
+		91F8BF1D19142D4A008ED7B9 /* HSBColorControlVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSBColorControlVC.m; sourceTree = "<group>"; };
+		91F8BF4119142DD1008ED7B9 /* BlurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlurViewController.m; path = ../../../../Downloads/BlurViewController.m; sourceTree = "<group>"; };
+		91F8BF4319142DF1008ED7B9 /* BlurViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BlurViewController.h; path = ../../../../Downloads/BlurViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +104,14 @@
 		91A0670D19116DE800F0A540 = {
 			isa = PBXGroup;
 			children = (
+				91F8BF4319142DF1008ED7B9 /* BlurViewController.h */,
+				91F8BF4119142DD1008ED7B9 /* BlurViewController.m */,
+				91F8BF1B19142D4A008ED7B9 /* HueSaturationBrightness */,
+				91F8BF1219141CD1008ED7B9 /* blur.png */,
+				91F8BF1319141CD1008ED7B9 /* HSB.png */,
+				91F8BF1419141CD1008ED7B9 /* filter.png */,
+				91F8BF1519141CD1008ED7B9 /* ControlsViewController.h */,
+				91F8BF1619141CD1008ED7B9 /* ControlsViewController.m */,
 				91A0674819116E0700F0A540 /* PPAViewController.h */,
 				91A0674919116E0700F0A540 /* PPAViewController.m */,
 				9198CDEC1912834E003D4C08 /* PPAFilterController.h */,
@@ -160,6 +183,16 @@
 				91A0673B19116DE900F0A540 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91F8BF1B19142D4A008ED7B9 /* HueSaturationBrightness */ = {
+			isa = PBXGroup;
+			children = (
+				91F8BF1C19142D4A008ED7B9 /* HSBColorControlVC.h */,
+				91F8BF1D19142D4A008ED7B9 /* HSBColorControlVC.m */,
+			);
+			name = HueSaturationBrightness;
+			path = ../../../../Downloads/HueSaturationBrightness;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +273,9 @@
 			files = (
 				91A0672419116DE800F0A540 /* InfoPlist.strings in Resources */,
 				91A0672C19116DE800F0A540 /* Images.xcassets in Resources */,
+				91F8BF1919141CD1008ED7B9 /* filter.png in Resources */,
+				91F8BF1719141CD1008ED7B9 /* blur.png in Resources */,
+				91F8BF1819141CD1008ED7B9 /* HSB.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F8BF3119142D4A008ED7B9 /* HSBColorControlVC.m in Sources */,
+				91F8BF4219142DD1008ED7B9 /* BlurViewController.m in Sources */,
 				91A0672A19116DE800F0A540 /* PPAAppDelegate.m in Sources */,
 				91A0674A19116E0700F0A540 /* PPAViewController.m in Sources */,
 				91A0672619116DE800F0A540 /* main.m in Sources */,
+				91F8BF1A19141CD1008ED7B9 /* ControlsViewController.m in Sources */,
 				9198CDEE1912834E003D4C08 /* PPAFilterController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

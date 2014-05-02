@@ -8,9 +8,14 @@
 
 #import "PPAViewController.h"
 #import "PPAFilterController.h"
+#import "ControlsViewController.h"
+#import "BlurViewController.h"
+#import "HSBColorControlVC.h"
 
 
-@interface PPAViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate,PPAFilterControllerDelegate>
+
+@interface PPAViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate,PPAFilterControllerDelegate,
+ControlsViewControllerDelegate,BlurViewControllerDelegate,HSBColorControlVCDelegate>
 
 @property (nonatomic) UIImage *originalImage; //required for many instances //local to this file 
 
@@ -20,6 +25,9 @@
 {
     UIImageView *imageView;
     PPAFilterController *filterVC; //setting this global
+    ControlsViewController *ControlsVC;
+    BlurViewController *blurVC;
+    HSBColorControlVC *colorVC;
     
 }
 
@@ -50,22 +58,53 @@
     libraryButton.backgroundColor = [UIColor grayColor];
     [navBar addSubview:libraryButton];
     
-//    UIView *suspenceView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT-140, SCREEN_WIDTH, 40)];
-//    suspenceView.backgroundColor = [UIColor lightGrayColor];
-//    [self.view addSubview:suspenceView];
-//    
+    ControlsVC = [[ControlsViewController alloc] initWithNibName:nil bundle:nil];
+    ControlsVC.delegate = self;
+     ControlsVC.view.frame = CGRectMake(0, SCREEN_HEIGHT-140, SCREEN_WIDTH, 40);
+    [self.view addSubview:ControlsVC.view];
+
     
     filterVC = [[PPAFilterController alloc] initWithNibName:nil bundle:nil];
     filterVC.delegate = self;
     filterVC.view.frame = CGRectMake(0, SCREEN_HEIGHT-100, SCREEN_WIDTH, 100);
+    
+    blurVC = [[BlurViewController alloc] initWithNibName:nil bundle:nil];
+    blurVC.delegate = self;
+    blurVC.view.frame = CGRectMake(0, SCREEN_HEIGHT-100, SCREEN_WIDTH, 100);
+    
+    
+    colorVC = [[HSBColorControlVC alloc] initWithNibName:nil bundle:nil];
+    colorVC.delegate = self;
+    colorVC.view.frame = CGRectMake(0, SCREEN_HEIGHT-100, SCREEN_WIDTH, 100);
+    
+}
+-(void) selectFilter
+{
     [self.view addSubview:filterVC.view];
-    
-    
+    [blurVC.view removeFromSuperview];
+    [colorVC.view removeFromSuperview];
+
+}
+-(void) selectHsb
+{
+    [self.view addSubview:colorVC.view];
+    [filterVC.view removeFromSuperview];
+    [blurVC.view removeFromSuperview];
+
+}
+-(void) selectBlur
+{
+    [self.view addSubview:blurVC.view];
+    [filterVC.view removeFromSuperview];
+    [colorVC.view removeFromSuperview];
+
 }
 
 -(void)updateCurrentImageWithFilteredImage:(UIImage *)image
 {
     imageView.image = image;
+    blurVC.imageToFilter = image;
+    colorVC.currentImage  = image;
 }
 
 -(void) setOriginalImage:(UIImage *)originalImage
