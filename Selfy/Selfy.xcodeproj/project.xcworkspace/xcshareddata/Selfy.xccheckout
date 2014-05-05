@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>AF85EFC8-0C2B-43B4-8317-7E7145CF6F48</string>
+	<string>BD51536A-B69F-493B-ACE8-BF8DC11CF77E</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Selfy</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F61019C3-78A2-4817-BE5F-CCD1D38D8FA4</key>
+		<key>54744F25-8935-4278-B566-60F767D3AAAE</key>
 		<string>https://github.com/savithareddy/The-Iron-Yard.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Selfy/Selfy.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F61019C3-78A2-4817-BE5F-CCD1D38D8FA4</key>
+		<key>54744F25-8935-4278-B566-60F767D3AAAE</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F61019C3-78A2-4817-BE5F-CCD1D38D8FA4</string>
+	<string>54744F25-8935-4278-B566-60F767D3AAAE</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F61019C3-78A2-4817-BE5F-CCD1D38D8FA4</string>
+			<string>54744F25-8935-4278-B566-60F767D3AAAE</string>
 			<key>IDESourceControlWCCName</key>
 			<string>The-Iron-Yard</string>
 		</dict>

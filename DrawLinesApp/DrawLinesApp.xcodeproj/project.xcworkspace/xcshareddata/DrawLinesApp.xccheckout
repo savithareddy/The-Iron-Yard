@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>392BEF2E-FDB2-409B-AF03-B7F51560FB9D</string>
+	<string>ED77D66C-2CA8-42D4-B8EC-1D8E9E30F73B</string>
 	<key>IDESourceControlProjectName</key>
 	<string>DrawLinesApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>36FDE770-2ED0-498C-8A10-34EDFEA09BCB</key>
+		<key>54744F25-8935-4278-B566-60F767D3AAAE</key>
 		<string>https://github.com/savithareddy/The-Iron-Yard.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>DrawLinesApp/DrawLinesApp.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>36FDE770-2ED0-498C-8A10-34EDFEA09BCB</key>
+		<key>54744F25-8935-4278-B566-60F767D3AAAE</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>36FDE770-2ED0-498C-8A10-34EDFEA09BCB</string>
+	<string>54744F25-8935-4278-B566-60F767D3AAAE</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>36FDE770-2ED0-498C-8A10-34EDFEA09BCB</string>
+			<string>54744F25-8935-4278-B566-60F767D3AAAE</string>
 			<key>IDESourceControlWCCName</key>
 			<string>The-Iron-Yard</string>
 		</dict>
