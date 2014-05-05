@@ -7,8 +7,12 @@
 //
 
 #import "BBALevelController.h"
+#import <AVFoundation/AVFoundation.h> // for sounds
 
 @interface BBALevelController () <UICollisionBehaviorDelegate,UIAlertViewDelegate> //added this < >//private interface // @property in .h file is global
+
+@property (nonatomic) AVAudioPlayer *player; // creating an object // next step init the object // property is in .m so no @implemtation
+
 @property (nonatomic) UIView *paddle;
 @property (nonatomic) NSMutableArray *balls;
 @property (nonatomic) NSMutableArray *bricks;
@@ -53,8 +57,18 @@
         self.view.backgroundColor = [UIColor colorWithWhite:0.8 alpha:1.0];
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapScreen:)];
         [self.view addGestureRecognizer:tap];
+        self.player = [[AVAudioPlayer alloc] init]; //player only gives an error //_player is the option // but self.player is correct //next step crete a method playSoundWithName
                 }
     return self;
+}
+
+
+-(void) playSoundWithName:(NSString *) soundName // after this method is creating next step call this method where collision happens
+{
+    NSString *file = [[NSBundle mainBundle] pathForResource:soundName ofType:@"wav"];
+    NSURL *url = [[NSURL alloc] initFileURLWithPath:file]; //either data or url can be used // soundfile place in the browser has the corresponding URL // important to alloc init NSURL to play the sound
+    self.player  = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    [self.player play];
 }
 
 -(void) tapScreen: (UITapGestureRecognizer *) gr
@@ -131,6 +145,11 @@
 
 -(void) collisionBehavior:(UICollisionBehavior *)behavior beganContactForItem:(id<UIDynamicItem>)item1 withItem:(id<UIDynamicItem>)item2 atPoint:(CGPoint)p
 {
+    
+    if ([item1 isEqual:self.paddle] || [item2 isEqual:self.paddle]) {
+        [self playSoundWithName:@"retro_click"];
+        
+    }
     UIView *tempBrick;
     for (UIView * brick in self.bricks) // NOTE:DONOT add or remove an item from a array within any loop
     {
@@ -167,6 +186,7 @@
         
     }
         if (tempBrick != nil) {
+            [self playSoundWithName:@"electric_alert"]; // after creating the method use this
       [self.bricks removeObjectIdenticalTo:tempBrick];
             //if ([self.bricks count] == 0) {
         }
