@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		912CDF641917E83B0030A771 /* PNAWorldController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912CDF631917E83B0030A771 /* PNAWorldController.m */; };
+		912CDF66191866F70030A771 /* Cat meow.webloc in Resources */ = {isa = PBXBuildFile; fileRef = 912CDF65191866F70030A771 /* Cat meow.webloc */; };
+		912CDF6B19186B260030A771 /* cat1.png in Resources */ = {isa = PBXBuildFile; fileRef = 912CDF6A19186B260030A771 /* cat1.png */; };
+		912CDF6F19186CE10030A771 /* cat2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 912CDF6E19186CE10030A771 /* cat2.jpeg */; };
+		912CDF7119186E960030A771 /* cat_angry.wav in Resources */ = {isa = PBXBuildFile; fileRef = 912CDF7019186E960030A771 /* cat_angry.wav */; };
 		919DFA4E1917C6E500049C9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919DFA4D1917C6E500049C9B /* Foundation.framework */; };
 		919DFA501917C6E500049C9B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919DFA4F1917C6E500049C9B /* CoreGraphics.framework */; };
 		919DFA521917C6E500049C9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919DFA511917C6E500049C9B /* UIKit.framework */; };
@@ -40,6 +44,10 @@
 /* Begin PBXFileReference section */
 		912CDF621917E83B0030A771 /* PNAWorldController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNAWorldController.h; sourceTree = "<group>"; };
 		912CDF631917E83B0030A771 /* PNAWorldController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNAWorldController.m; sourceTree = "<group>"; };
+		912CDF65191866F70030A771 /* Cat meow.webloc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Cat meow.webloc"; sourceTree = "<group>"; };
+		912CDF6A19186B260030A771 /* cat1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat1.png; sourceTree = "<group>"; };
+		912CDF6E19186CE10030A771 /* cat2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat2.jpeg; sourceTree = "<group>"; };
+		912CDF7019186E960030A771 /* cat_angry.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cat_angry.wav; sourceTree = "<group>"; };
 		919DFA4A1917C6E500049C9B /* PixelNoise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelNoise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		919DFA4D1917C6E500049C9B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		919DFA4F1917C6E500049C9B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -89,9 +97,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		912CDF6719186A590030A771 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				912CDF7019186E960030A771 /* cat_angry.wav */,
+				912CDF6E19186CE10030A771 /* cat2.jpeg */,
+				912CDF6A19186B260030A771 /* cat1.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		919DFA411917C6E500049C9B = {
 			isa = PBXGroup;
 			children = (
+				912CDF6719186A590030A771 /* Images */,
 				919DFA821917CCFE00049C9B /* Sounds */,
 				919DFA7F1917C89800049C9B /* PNAPixelSounds.h */,
 				919DFA801917C89800049C9B /* PNAPixelSounds.m */,
@@ -169,6 +188,7 @@
 		919DFA821917CCFE00049C9B /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				912CDF65191866F70030A771 /* Cat meow.webloc */,
 				919DFA871917CD3800049C9B /* sub_bass_mouseover.wav */,
 				919DFA851917CD2300049C9B /* melodic1_click.wav */,
 				919DFA831917CD0F00049C9B /* click_alert.wav */,
@@ -255,8 +275,12 @@
 				919DFA841917CD0F00049C9B /* click_alert.wav in Resources */,
 				919DFA861917CD2300049C9B /* melodic1_click.wav in Resources */,
 				919DFA581917C6E500049C9B /* InfoPlist.strings in Resources */,
+				912CDF6B19186B260030A771 /* cat1.png in Resources */,
 				919DFA881917CD3800049C9B /* sub_bass_mouseover.wav in Resources */,
 				919DFA601917C6E500049C9B /* Images.xcassets in Resources */,
+				912CDF7119186E960030A771 /* cat_angry.wav in Resources */,
+				912CDF66191866F70030A771 /* Cat meow.webloc in Resources */,
+				912CDF6F19186CE10030A771 /* cat2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
