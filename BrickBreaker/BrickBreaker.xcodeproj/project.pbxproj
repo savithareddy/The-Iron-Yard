@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91968318191958F400871080 /* BBASingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 91968317191958F400871080 /* BBASingleton.m */; };
+		9196836B191A691A00871080 /* BBAGameData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9196836A191A691A00871080 /* BBAGameData.m */; };
 		919DFA8B1917D60100049C9B /* electric_alert.wav in Resources */ = {isa = PBXBuildFile; fileRef = 919DFA8A1917D60100049C9B /* electric_alert.wav */; };
 		919DFA8D1917D61300049C9B /* retro_click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 919DFA8C1917D61300049C9B /* retro_click.wav */; };
 		919FDD86190019C5008A4E7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919FDD85190019C5008A4E7A /* Foundation.framework */; };
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		91968316191958F400871080 /* BBASingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBASingleton.h; sourceTree = "<group>"; };
+		91968317191958F400871080 /* BBASingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBASingleton.m; sourceTree = "<group>"; };
+		91968369191A691A00871080 /* BBAGameData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAGameData.h; sourceTree = "<group>"; };
+		9196836A191A691A00871080 /* BBAGameData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBAGameData.m; sourceTree = "<group>"; };
 		919DFA8A1917D60100049C9B /* electric_alert.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = electric_alert.wav; sourceTree = "<group>"; };
 		919DFA8C1917D61300049C9B /* retro_click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = retro_click.wav; sourceTree = "<group>"; };
 		919FDD82190019C5008A4E7A /* BrickBreaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrickBreaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +137,10 @@
 				919FDD95190019C5008A4E7A /* BBAAppDelegate.m */,
 				919FDDB719001D38008A4E7A /* BBALevelController.h */,
 				919FDDB819001D38008A4E7A /* BBALevelController.m */,
+				91968369191A691A00871080 /* BBAGameData.h */,
+				9196836A191A691A00871080 /* BBAGameData.m */,
+				91968316191958F400871080 /* BBASingleton.h */,
+				91968317191958F400871080 /* BBASingleton.m */,
 				919FDDB419001BA8008A4E7A /* BBAViewController.h */,
 				919FDDB519001BA8008A4E7A /* BBAViewController.m */,
 				919FDD97190019C5008A4E7A /* Images.xcassets */,
@@ -268,8 +278,10 @@
 			files = (
 				919FDDB919001D38008A4E7A /* BBALevelController.m in Sources */,
 				919FDDB619001BA8008A4E7A /* BBAViewController.m in Sources */,
+				91968318191958F400871080 /* BBASingleton.m in Sources */,
 				919FDD96190019C5008A4E7A /* BBAAppDelegate.m in Sources */,
 				919FDD92190019C5008A4E7A /* main.m in Sources */,
+				9196836B191A691A00871080 /* BBAGameData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

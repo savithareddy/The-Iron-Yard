@@ -8,10 +8,12 @@
 
 #import "BBALevelController.h"
 #import <AVFoundation/AVFoundation.h> // for sounds
+#import "BBAGameData.h"
 
-@interface BBALevelController () <UICollisionBehaviorDelegate,UIAlertViewDelegate> //added this < >//private interface // @property in .h file is global
+@interface BBALevelController () <UICollisionBehaviorDelegate,AVAudioPlayerDelegate,UIAlertViewDelegate> //added this < >//private interface // @property in .h file is global
 
-@property (nonatomic) AVAudioPlayer *player; // creating an object // next step init the object // property is in .m so no @implemtation
+//@property (nonatomic) AVAudioPlayer *player; // creating an object // next step init the object // property is in .m so no @implemtation
+@property (nonatomic) NSMutableArray *players;
 
 @property (nonatomic) UIView *paddle;
 @property (nonatomic) NSMutableArray *balls;
@@ -51,13 +53,14 @@
     if (self) {
         self.bricks = [@[] mutableCopy]; // properties have to be called with self since they are declared as private
         self.balls = [@[] mutableCopy];
+        self.players = [@[] mutableCopy];
         paddleWidth = 80;
         pointCount =0;
         lives = 5;
         self.view.backgroundColor = [UIColor colorWithWhite:0.8 alpha:1.0];
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapScreen:)];
         [self.view addGestureRecognizer:tap];
-        self.player = [[AVAudioPlayer alloc] init]; //player only gives an error //_player is the option // but self.player is correct //next step crete a method playSoundWithName
+//        self.player = [[AVAudioPlayer alloc] init]; //player only gives an error //_player is the option // but self.player is correct //next step crete a method playSoundWithName
                 }
     return self;
 }
@@ -67,10 +70,17 @@
 {
     NSString *file = [[NSBundle mainBundle] pathForResource:soundName ofType:@"wav"];
     NSURL *url = [[NSURL alloc] initFileURLWithPath:file]; //either data or url can be used // soundfile place in the browser has the corresponding URL // important to alloc init NSURL to play the sound
-    self.player  = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
-    [self.player play];
+//    self.player  = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    AVAudioPlayer *player  =[[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+//    [self.player play];
+    player.delegate = self;
+    [self.players addObject:player];
+    [player play];
 }
-
+-(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+    [self.players removeObjectIdenticalTo:player];
+}
 -(void) tapScreen: (UITapGestureRecognizer *) gr
 {
     CGPoint location = [gr locationInView:self.view];
@@ -87,6 +97,7 @@
 -(void) resetLevel
 {
     self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+[BBAGameData mainData] .currentScore = 0;
     [self createPaddle];
     [self createBall];
     [self createBricks];
@@ -174,7 +185,11 @@
                 //pointCount += 100;
                 pointCount += brick.tag;
            
+                
                 //pointsLabel.text = [[NSString alloc] initWithFormat:@"Total points = %i",pointCount];
+                
+NSInteger currentScore = [BBAGameData mainData].currentScore; //getteing the dta
+[BBAGameData mainData].currentScore = currentScore + brick.tag ; // setting the value
                 
                 if ([self.delegate respondsToSelector:@selector(addPoints:)]) {
                     [self.delegate addPoints:pointCount];

@@ -8,6 +8,7 @@
 
 #import "BBAViewController.h"
 #import "BBALevelController.h"
+#import "BBAGameData.h"
 
 @interface BBAViewController () <BBALevelDelegate> //add levelDelegate to call the delegate in the levelController.h
 
@@ -96,7 +97,8 @@
     pointsLabel = [[UILabel alloc]initWithFrame:CGRectMake(340, 10, 100, 20)];
     pointsLabel.backgroundColor = [UIColor clearColor];
     pointsLabel.textColor =[UIColor blackColor];
-    pointsLabel.text = @"Total points = 0";
+//pointsLabel.text = @"Total points = 0";
+    pointsLabel.text = [NSString stringWithFormat:@"%d", [BBAGameData mainData].topScore];
     pointsLabel.font = [UIFont systemFontOfSize:10];
     [header addSubview:pointsLabel];
     
