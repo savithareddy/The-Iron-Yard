@@ -90,7 +90,7 @@
         self.gravity =[[UIGravityBehavior alloc] initWithItems:self.blocks];
         CGVector vector = CGVectorMake(0.0,0.8);
         [self.gravity setGravityDirection:vector];
-//         [sounds playSoundWithName:@"cat_angry"];
+//   [sounds playSoundWithName:@"cat_angry"];
         [self.animator addBehavior:self.gravity];
         [self blockCollision];
         self.blocksDynamicProperties.elasticity = 0.1;
@@ -105,13 +105,13 @@
     }
 -(void)collisionBehavior:(UICollisionBehavior *)behavior beganContactForItem:(id<UIDynamicItem>)item withBoundaryIdentifier:(id<NSCopying>)identifier atPoint:(CGPoint)p
 {
-    //[sounds playSoundWithName:@"cat_angry"];
+    [sounds playSoundWithName:@"cat_angry"];
     
         NSLog(@" block end pos x  %f", block.frame.origin.x);
     NSLog(@" block end pos y%f", block.frame.origin.y);
-   //if (block.frame.origin.y >= 439) {
+//   if (block.frame.origin.y >= 439) {
  if ([(NSString *) identifier isEqualToString:@"floor"] ){
-     [self.collision removeItem:block];
+ [self.collision removeItem:block];
     for (int i=0; i <5; i++) {
         NSLog(@"looped %d",i);
         smallBlock = [[UIView alloc] initWithFrame:CGRectMake(point.x, 439, 10, 10)];
@@ -121,12 +121,12 @@
         self.pusher =[[UIPushBehavior alloc] initWithItems:self.smallBlocks mode:UIPushBehaviorModeContinuous];
         self.pusher.active = YES;
         if (i==0) {
-                self.pusher.pushDirection = CGVectorMake(-0.01,-0.5 );
+                self.pusher.pushDirection = CGVectorMake(-0.1,-0.1 );
            self.pusher.angle = 10;
                  [self.animator addBehavior:self.pusher];
                 }
              else if (i==1){
-                self.pusher.pushDirection = CGVectorMake(-0.01,-0.01 );
+                self.pusher.pushDirection = CGVectorMake(-0.05,-0.1 );
                  self.pusher.angle = 45;
                 [self.animator addBehavior:self.pusher];
                 }
@@ -135,11 +135,11 @@
              [self.animator addBehavior:self.pusher];
             }
             else if (i==3){
-                self.pusher.pushDirection = CGVectorMake(0.01,-0.01 );
+                self.pusher.pushDirection = CGVectorMake(0.05,-0.1 );
              [self.animator addBehavior:self.pusher];
             }
             else {
-            self.pusher.pushDirection = CGVectorMake(0.01,-0.00 );
+            self.pusher.pushDirection = CGVectorMake(0.1,-0.1 );
              [self.animator addBehavior:self.pusher];
             }
     }

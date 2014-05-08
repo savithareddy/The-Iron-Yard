@@ -12,6 +12,7 @@
 		912CDF6B19186B260030A771 /* cat1.png in Resources */ = {isa = PBXBuildFile; fileRef = 912CDF6A19186B260030A771 /* cat1.png */; };
 		912CDF6F19186CE10030A771 /* cat2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 912CDF6E19186CE10030A771 /* cat2.jpeg */; };
 		912CDF7119186E960030A771 /* cat_angry.wav in Resources */ = {isa = PBXBuildFile; fileRef = 912CDF7019186E960030A771 /* cat_angry.wav */; };
+		919682D41919154800871080 /* PNAPixelWorld2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 919682D31919154800871080 /* PNAPixelWorld2Controller.m */; };
 		919DFA4E1917C6E500049C9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919DFA4D1917C6E500049C9B /* Foundation.framework */; };
 		919DFA501917C6E500049C9B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919DFA4F1917C6E500049C9B /* CoreGraphics.framework */; };
 		919DFA521917C6E500049C9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919DFA511917C6E500049C9B /* UIKit.framework */; };
@@ -48,6 +49,8 @@
 		912CDF6A19186B260030A771 /* cat1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat1.png; sourceTree = "<group>"; };
 		912CDF6E19186CE10030A771 /* cat2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat2.jpeg; sourceTree = "<group>"; };
 		912CDF7019186E960030A771 /* cat_angry.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cat_angry.wav; sourceTree = "<group>"; };
+		919682D21919154800871080 /* PNAPixelWorld2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNAPixelWorld2Controller.h; sourceTree = "<group>"; };
+		919682D31919154800871080 /* PNAPixelWorld2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNAPixelWorld2Controller.m; sourceTree = "<group>"; };
 		919DFA4A1917C6E500049C9B /* PixelNoise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelNoise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		919DFA4D1917C6E500049C9B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		919DFA4F1917C6E500049C9B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -116,6 +119,8 @@
 				919DFA801917C89800049C9B /* PNAPixelSounds.m */,
 				912CDF621917E83B0030A771 /* PNAWorldController.h */,
 				912CDF631917E83B0030A771 /* PNAWorldController.m */,
+				919682D21919154800871080 /* PNAPixelWorld2Controller.h */,
+				919682D31919154800871080 /* PNAPixelWorld2Controller.m */,
 				919DFA7C1917C76200049C9B /* PNAViewController.h */,
 				919DFA7D1917C76200049C9B /* PNAViewController.m */,
 				919DFA531917C6E500049C9B /* PixelNoise */,
@@ -299,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				919682D41919154800871080 /* PNAPixelWorld2Controller.m in Sources */,
 				919DFA811917C89800049C9B /* PNAPixelSounds.m in Sources */,
 				919DFA5E1917C6E500049C9B /* PNAAppDelegate.m in Sources */,
 				912CDF641917E83B0030A771 /* PNAWorldController.m in Sources */,
