@@ -7,6 +7,9 @@
 //
 
 #import "TDLTableViewCell.h"
+#import "TDLTableViewController.h"
+#import "TDLSingleton.h"
+
 
 @implementation TDLTableViewCell
 {
@@ -52,46 +55,49 @@
     return _profile;
 }*/
 
--(void) setProfile:(NSDictionary *)profile // Setter
+-(void) setIndex:(NSInteger)index
 {
-        NSURL *imageUrl = [NSURL URLWithString:profile[@"image"]];
-
+    _index = index;
+    NSDictionary *profileInfo = [[TDLSingleton sharedCollection] allListNames] [index];
+    NSURL *imageUrl = [NSURL URLWithString:profileInfo[@"image"]];
+    
     NSData * imageData = [NSData dataWithContentsOfURL:imageUrl];
     //UIImage *image = [UIImage imageWithData:imageData];
     
     //profileImage.image = profile[@"image"];
-    profileURL.text = profile[@"github"];
-    profileName.text = profile[@"name"];
-   // if(profile !=nil)
+    profileURL.text = profileInfo[@"github"];
+    profileName.text = profileInfo[@"name"];
+    // if(profile !=nil)
     UIImage * image = [UIImage imageWithData:imageData];
     //UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 60, 60)];
     //imageView.image = profile[@"image"];
     //profileImage.image = profile[@"image"];
-     profileImage.image = image;
+    profileImage.image = image;
     //imageView.layer.cornerRadius=30;
     //imageView.layer.masksToBounds=YES;
     //[self.contentView addSubview:imageView];
     
     //UILabel * labelView = [[UILabel alloc] initWithFrame:CGRectMake(90, 20, 60, 60)];
-    profileName.text = profile[@"name"];
+    profileName.text = profileInfo[@"name"];
     //labelView.font = [UIFont fontWithName:@"Times New Roman" size:10];
     //[self.contentView addSubview:labelView];
     
     //UILabel * urlView = [[UILabel alloc] initWithFrame:CGRectMake(150, 20, 175, 60)];
-    profileURL.text = profile[@"github"];
+    profileURL.text = profileInfo[@"github"];
     //urlView.font = [UIFont fontWithName:@"Times New Roman" size:10];
     //[self.contentView addSubview:urlView];
-
-    
-    
-        _profile = profile;
 }
 
+//-(void) setProfile:(NSDictionary *)profile // Setter
+//{
+//    _profile = profile;
+//}
 
-- (void)awakeFromNib
-{
-    // Initialization code
-}
+
+//- (void)awakeFromNib
+//{
+//    // Initialization code
+//}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {

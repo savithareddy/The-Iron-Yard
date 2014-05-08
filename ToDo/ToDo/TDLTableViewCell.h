@@ -10,7 +10,9 @@
 
 @interface TDLTableViewCell : UITableViewCell
 
-@property (nonatomic) NSDictionary * profile;
+//@property (nonatomic) NSDictionary * profile;
+
+@property (nonatomic) NSInteger index;
 
 
 @end

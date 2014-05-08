@@ -11,6 +11,7 @@
 #import "TDLExpand.h"
 #import "TDLNewUser.h"
 #import "TDLGitHubRequest.h"
+#import "TDLSingleton.h"
 
 
 
@@ -20,7 +21,7 @@
 {
     //NSArray *listNames;
     //NSArray *listImages;
-    NSMutableArray * listNames;
+  //  NSMutableArray * listNames;
     UITextField *nameField ;
     
     
@@ -93,8 +94,8 @@
 //                        @"github":@"https://github.com/savithareddy"}
 //                       ] mutableCopy]; //adding an item to the table due to rate limiting problems.
         
-        listNames = [@[] mutableCopy];
-        [self loadListItems];
+       // listNames = [@[] mutableCopy];
+//        [self loadListItems];    //singleton
         
         self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
         
@@ -102,10 +103,10 @@
         //self.tableView.editing = YES;
         
         
-        UIView * header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
-        header.backgroundColor = [UIColor whiteColor];
-        
-        self.tableView.tableHeaderView = header;
+//        UIView * header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+//        header.backgroundColor = [UIColor whiteColor];
+//        
+//        self.tableView.tableHeaderView = header;
     
         //UITextView * titleHeader = [[UITextView alloc] initWithFrame:CGRectMake(2, 5, 225, 30)];
                            //titleHeader.text = @"IOS Class 2014 ";
@@ -117,55 +118,55 @@
         //[button addTarget:self action:@selector(pressNewUser) forControlEvents:UIControlEventTouchUpInside];
         
         
-        nameField = [[UITextField alloc] initWithFrame:CGRectMake(20, 20, 200, 30)];
-        nameField.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.05];
-        nameField.layer.cornerRadius = 6;
-        nameField.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 30)];
-        nameField.leftViewMode = UITextFieldViewModeAlways;
-        nameField.delegate = self;
-        [header addSubview:nameField];
+//        nameField = [[UITextField alloc] initWithFrame:CGRectMake(20, 20, 200, 30)];
+//        nameField.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.05];
+//        nameField.layer.cornerRadius = 6;
+//        nameField.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 30)];
+//        nameField.leftViewMode = UITextFieldViewModeAlways;
+//        nameField.delegate = self;
+//        [header addSubview:nameField];
         
-        UIButton * button = [[UIButton alloc] initWithFrame:CGRectMake(230, 20, 60, 30)];
-        
-        [button setTitle:@"New User" forState:(UIControlStateNormal)];
-        [button addTarget:self action:@selector(pressNewUser) forControlEvents:UIControlEventTouchUpInside];
-        button.font = [UIFont systemFontOfSize:10];
-        button.layer.cornerRadius = 6;
-        button.backgroundColor = [UIColor blackColor];
-        [header addSubview:button];
-        
-        UILabel *titleHeader = [[UILabel alloc] initWithFrame:CGRectMake(20, 50, 280, 30)];
-        titleHeader.text = @"GitHub Users";
-        titleHeader.textColor = [UIColor lightGrayColor];
-        titleHeader.font = [UIFont systemFontOfSize:15];
-        [header addSubview:titleHeader];
-        //button.backgroundColor = [UIColor whiteColor];
-        //button.titleLabel.text = @"NewUser";
+//        UIButton * button = [[UIButton alloc] initWithFrame:CGRectMake(230, 20, 60, 30)];
+//        
+//        [button setTitle:@"New User" forState:(UIControlStateNormal)];
+//        [button addTarget:self action:@selector(pressNewUser) forControlEvents:UIControlEventTouchUpInside];
+//        button.font = [UIFont systemFontOfSize:10];
+//        button.layer.cornerRadius = 6;
+//        button.backgroundColor = [UIColor blackColor];
+//        [header addSubview:button];
+//        
+//        UILabel *titleHeader = [[UILabel alloc] initWithFrame:CGRectMake(20, 50, 280, 30)];
+//        titleHeader.text = @"GitHub Users";
+//        titleHeader.textColor = [UIColor lightGrayColor];
+//        titleHeader.font = [UIFont systemFontOfSize:15];
+//        [header addSubview:titleHeader];
+//        //button.backgroundColor = [UIColor whiteColor];
+//        //button.titleLabel.text = @"NewUser";
 
         
         
+//        
+//        UIView * footer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
+//        footer.backgroundColor = [UIColor darkGrayColor];
+//        
+////        self.tableView.tableFooterView = footer;
         
-        UIView * footer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
-        footer.backgroundColor = [UIColor darkGrayColor];
+//        UILabel * titleFooter = [[UILabel alloc] initWithFrame:CGRectMake(10, 20, 300, 30)];
+//        titleFooter.text = @" Prepared by TIY-Student";
+//        titleFooter.textColor = [UIColor whiteColor];
+//        titleFooter.textAlignment = UITextAlignmentRight;
+//        titleFooter.font = [UIFont fontWithName:@"Times New Roman" size:10];
+//        [footer addSubview:titleFooter];
         
-//        self.tableView.tableFooterView = footer;
-        
-        UILabel * titleFooter = [[UILabel alloc] initWithFrame:CGRectMake(10, 20, 300, 30)];
-        titleFooter.text = @" Prepared by TIY-Student";
-        titleFooter.textColor = [UIColor whiteColor];
-        titleFooter.textAlignment = UITextAlignmentRight;
-        titleFooter.font = [UIFont fontWithName:@"Times New Roman" size:10];
-        [footer addSubview:titleFooter];
+//                ;
 
         
-        
-                           
         
         //NSLog(@"listNames : %@ %@ %@ %@ %@ %@ %@ %@ %@ %@ %@ %@ %@ %@ %@", listNames, listNames[0], listNames, listNames, listNames, listNames, listNames, listNames, listNames, listNames,listNames, listNames, listNames, listNames,listNames);
         //for (NSString * day in ; listItems) {
         //    NSLog(@"listitems: %@", day);
         //}
-        
+                
     }
             
                            
@@ -176,7 +177,7 @@
 {
     [super viewDidLoad];
     
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+//    self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
 //    TDLNewUser *button= [[TDLNewUser alloc] init] ;
 //    button.frame = CGRectMake(275, 55, 22, 22);
@@ -210,9 +211,12 @@
 //                           @"github": [NSString stringWithFormat:@"https://github.com/%@",username] }]; // adding a new item @{} to the existing one
     
     NSDictionary * userInfo = [TDLGitHubRequest getUserWithUserName: username];
+    
+    NSLog(@"%@",userInfo);
     if([[userInfo allKeys] count] == 3)
     {
-        [listNames addObject:userInfo];
+        [[TDLSingleton sharedCollection] addListName:userInfo];
+        //[listNames addObject:userInfo];
     }
     else
     {
@@ -260,8 +264,8 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 
-
-    return [listNames count];
+    return  [[[TDLSingleton sharedCollection] allListNames] count];
+   // return [listNames count];
     //return [listImages count];
     
 }
@@ -277,6 +281,7 @@
         cell = [[TDLTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
         
     }
+    cell.index = indexPath.row;
    // int index = [indexPath row];
     //int index = indexPath.row;
     
@@ -294,7 +299,8 @@
      //NSDictionary *listName = [self getListItem: indexPath.row];
     //cell.profile = listName; // setting profile to the cell
     
-    cell.profile = [self getListItem: indexPath.row];
+//    cell.profile = [self getListItem: indexPath.row];
+    
     
     //cell.textLabel.text = listName[ @"name"]; // cell.textlabel.text = listNames [index] [@"name"]; single line coding
     //cell.imageView.image = listName[ @"image"];
@@ -302,7 +308,7 @@
     
     
     return cell;
-    [self saveData];
+   // [self saveData];
 }
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -310,7 +316,10 @@
 //   int index = indexPath.row;
     //NSArray *reverseArray = [[listNames reverseObjectEnumerator] allObjects];
     //NSDictionary * listName = reverseArray[index];
-    NSDictionary *listName = [self getListItem: indexPath.row];
+    //NSDictionary *listName = [self getListItem: indexPath.row];
+    NSDictionary *listName = [[TDLSingleton sharedCollection] allListNames] [indexPath.row];
+
+    
     //NSLog(@"%@", listName);
     UIViewController * webController = [[UIViewController alloc]init];
     UIWebView * webView = [[UIWebView alloc] init];
@@ -320,7 +329,7 @@
     [self.navigationController pushViewController:webController animated:YES];
     //[navController pushViewController:webController animated:YES];
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:listName[@"github"]]]];
-    [self saveData];
+   // [self saveData];
     
     
     
@@ -333,64 +342,44 @@
 -(void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
 //   [listNames removeObjectAtIndex:indexPath.row];
-    NSDictionary * listName = [self getListItem:indexPath.row];
-    [listNames removeObjectIdenticalTo:listName];
+    //NSDictionary * listName = [self getListItem:indexPath.row];
+    //[[TDLSingleton sharedCollection] removeListItem:listName];
+    [[TDLSingleton sharedCollection] removeListNameAtIndex:indexPath.row];
+   // [listNames removeObjectIdenticalTo:listName];
   //[self.tableView reloadData ];
     TDLTableViewCell *cell = (TDLTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
     cell.alpha = 0;
     [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    NSLog(@"%@", listNames);
-    [self saveData];
+   // NSLog(@"%@", listNames);
+    //[self saveData];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return YES;
 }
--(void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
-{
-    if (sourceIndexPath == destinationIndexPath) return; // same row picking and dropping problem solved
-    //if (destinationIndexPath.row >= [listNames count]) return; // stops from crashing, and also picking and going down
-    //switching array objects here
-    NSDictionary *sourceItem = [self getListItem:sourceIndexPath.row];
-    NSDictionary *toItem = [self getListItem:destinationIndexPath.row];
-    [listNames removeObjectIdenticalTo:sourceItem];
-    //[listNames removeObjectsAtIndex:[listNames indexOfObject:sourceItem]];
-    [listNames insertObject:sourceItem atIndex:[listNames indexOfObject:toItem]];
-    [self saveData];
-    
-    
-}
--(NSDictionary *)getListItem:(NSInteger)row
-{
-    NSArray *reverseArray = [[listNames reverseObjectEnumerator] allObjects];
-    return reverseArray[row];
-}
+//-(void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
+//{
+//    if (sourceIndexPath == destinationIndexPath) return; // same row picking and dropping problem solved
+//    //if (destinationIndexPath.row >= [listNames count]) return; // stops from crashing, and also picking and going down
+//    //switching array objects here
+//    NSDictionary *sourceItem = [self getListItem:sourceIndexPath.row];
+//    NSDictionary *toItem = [self getListItem:destinationIndexPath.row];
+//    [[TDLSingleton sharedCollection] removeListItem:sourceItem];
+//    //[listNames removeObjectIdenticalTo:sourceItem];
+//    //[listNames removeObjectsAtIndex:[listNames indexOfObject:sourceItem]];
+//    
+//    [listNames insertObject:sourceItem atIndex:[listNames indexOfObject:toItem]];
+//    [self saveData];
+//    
+//    
+//}
+//-(NSDictionary *)getListItem:(NSInteger)row
+//{
+//    NSArray *reverseArray = [[listNames reverseObjectEnumerator] allObjects];
+//    return reverseArray[row];
+//}
 
 
-- (void)saveData
-{
-    NSString *path = [self listArchivePath];
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:listNames];
-    [data writeToFile:path options:NSDataWritingAtomic error:nil];
-}
-
-
-- (NSString *)listArchivePath
-{
-    NSArray *documentDirectories = NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask,YES);
-    NSString *documentDirectory = documentDirectories[0];
-    return [ documentDirectory stringByAppendingPathComponent:@"listdata.data"];
-    
-}
-- (void)loadListItems
-{
-    NSString *path = [self listArchivePath];
-    //NSLog(@"%@");
-    if([[NSFileManager defaultManager]fileExistsAtPath:path] )
-    {
-        listNames = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
-    }
-}
 
 @end

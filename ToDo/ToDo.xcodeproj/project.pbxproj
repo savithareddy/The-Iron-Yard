@@ -11,6 +11,8 @@
 		91343F4A18F2F43F005B3199 /* TDLGitHubRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 91343F4918F2F43F005B3199 /* TDLGitHubRequest.m */; };
 		9166D9F218EEE79800CC304F /* TDLNewUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9166D9F118EEE79800CC304F /* TDLNewUser.m */; };
 		9166D9F418EF333100CC304F /* GitHubFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9166D9F318EF333100CC304F /* GitHubFlow.storyboard */; };
+		9196831B19195CE100871080 /* TDLSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9196831A19195CE100871080 /* TDLSingleton.m */; };
+		9196832119198E0B00871080 /* TDLNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9196832019198E0B00871080 /* TDLNavController.m */; };
 		91A6AB6218EC4AEA00EDD50D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A6AB6118EC4AEA00EDD50D /* Foundation.framework */; };
 		91A6AB6418EC4AEA00EDD50D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A6AB6318EC4AEA00EDD50D /* CoreGraphics.framework */; };
 		91A6AB6618EC4AEA00EDD50D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A6AB6518EC4AEA00EDD50D /* UIKit.framework */; };
@@ -60,6 +62,10 @@
 		9166D9F018EEE79800CC304F /* TDLNewUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDLNewUser.h; sourceTree = "<group>"; };
 		9166D9F118EEE79800CC304F /* TDLNewUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDLNewUser.m; sourceTree = "<group>"; };
 		9166D9F318EF333100CC304F /* GitHubFlow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GitHubFlow.storyboard; sourceTree = "<group>"; };
+		9196831919195CE100871080 /* TDLSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDLSingleton.h; sourceTree = "<group>"; };
+		9196831A19195CE100871080 /* TDLSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDLSingleton.m; sourceTree = "<group>"; };
+		9196831F19198E0B00871080 /* TDLNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDLNavController.h; sourceTree = "<group>"; };
+		9196832019198E0B00871080 /* TDLNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDLNavController.m; sourceTree = "<group>"; };
 		91A6AB5E18EC4AEA00EDD50D /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A6AB6118EC4AEA00EDD50D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		91A6AB6318EC4AEA00EDD50D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -135,6 +141,8 @@
 			children = (
 				91A6AB9018EC4C7900EDD50D /* TDLTableViewController.h */,
 				91A6AB9118EC4C7900EDD50D /* TDLTableViewController.m */,
+				9196831919195CE100871080 /* TDLSingleton.h */,
+				9196831A19195CE100871080 /* TDLSingleton.m */,
 				91343F4718F2F3CB005B3199 /* Random */,
 				9166D9F318EF333100CC304F /* GitHubFlow.storyboard */,
 			);
@@ -153,6 +161,8 @@
 		91A6AB5518EC4AEA00EDD50D = {
 			isa = PBXGroup;
 			children = (
+				9196831F19198E0B00871080 /* TDLNavController.h */,
+				9196832019198E0B00871080 /* TDLNavController.m */,
 				9166D9F018EEE79800CC304F /* TDLNewUser.h */,
 				9166D9F118EEE79800CC304F /* TDLNewUser.m */,
 				9131C63A18EDA862007FD0E0 /* controllers */,
@@ -361,12 +371,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9196831B19195CE100871080 /* TDLSingleton.m in Sources */,
 				91343F4A18F2F43F005B3199 /* TDLGitHubRequest.m in Sources */,
 				91A6AB9218EC4C7900EDD50D /* TDLTableViewController.m in Sources */,
 				91A6AB6E18EC4AEA00EDD50D /* main.m in Sources */,
 				9166D9F218EEE79800CC304F /* TDLNewUser.m in Sources */,
 				91D7C20F18ECA088006C9E53 /* TDLExpand.m in Sources */,
 				9131C63618EDA798007FD0E0 /* TDLTableViewCell.m in Sources */,
+				9196832119198E0B00871080 /* TDLNavController.m in Sources */,
 				91A6AB7218EC4AEA00EDD50D /* TDLAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,7 +13,7 @@
 + (NSDictionary *) getUserWithUserName: (NSString *)userName
 {
     NSMutableDictionary *userInfo = [@{} mutableCopy];
-    NSString *github  = [NSString stringWithFormat:@"http://t.co/%@", userName];
+    NSString *github  = [NSString stringWithFormat:@"https://api.github.com/users/%@", userName];
     NSURL * url = [NSURL URLWithString:github];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
  //   NSOperationQueue *queue = [[NSOperationQueue alloc]init];
