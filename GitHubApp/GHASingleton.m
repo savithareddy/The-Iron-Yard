@@ -15,6 +15,9 @@
 @end
 
 @implementation GHASingleton
+{
+//    NSMutableArray *listNames;
+}
 
 +(GHASingleton *) sharedCollection
 {
@@ -33,6 +36,7 @@
     self=[super init];
     if(self)
     {
+//        self.listNames = [@[]mutableCopy];
         [self loadListNames];
     }
     return self;
@@ -46,6 +50,7 @@
     }
     return _listNames;
 }
+
 -(void)addListName:(NSDictionary *)listName
 {
     [self.listNames addObject:listName];
