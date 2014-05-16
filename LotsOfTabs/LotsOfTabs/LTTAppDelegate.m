@@ -16,7 +16,8 @@
     /// diffrent view controllers then use this
     ////version 1 : UITabBarController
     UITabBarController *tabBar = [[UITabBarController alloc]init];
-    self.window.rootViewController = tabBar;
+   self.window.rootViewController = tabBar;
+    self.window.backgroundColor=[UIColor  greenColor];
     UITableViewController *tvc = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
     UIViewController *vc = [[UIViewController alloc] initWithNibName:nil bundle:nil];
     [tabBar setViewControllers:@[tvc,vc] animated:YES];
@@ -27,14 +28,15 @@
     
     ////one view controller like one TVC then use navController
     ////version2 : UIToolBar in UINavigationContoller
-    UINavigationController *nc = [[UINavigationController alloc] init];
-    nc.toolbarHidden = NO;
-    UIBarButtonItem *button1 = [[UIBarButtonItem alloc] initWithTitle:@"TRACKS" style:UIBarButtonItemStylePlain target:nil action:nil];
-    UIBarButtonItem *button2 = [[UIBarButtonItem alloc] initWithTitle:@"PLAYLISTS" style:UIBarButtonItemStylePlain target:nil action:nil];
-    
-    UIBarButtonItem *flexible = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-    [nc.toolbar setItems:@[flexible,button1,flexible,button2,flexible] animated:YES];
-    self.window.rootViewController = nc;
+//    UINavigationController *nc = [[UINavigationController alloc] init];
+//    nc.toolbarHidden = NO;
+//    UIBarButtonItem *button1 = [[UIBarButtonItem alloc] initWithTitle:@"TRACKS" style:UIBarButtonItemStylePlain target:nil action:nil];
+//    UIBarButtonItem *button2 = [[UIBarButtonItem alloc] initWithTitle:@"PLAYLISTS" style:UIBarButtonItemStylePlain target:nil action:nil];
+//    
+//    UIBarButtonItem *flexible = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+//    [nc.toolbar setItems:@[flexible,button1,flexible,button2,flexible] animated:YES];
+////    self.window.backgroundColor=[UIColor yellowColor];
+//    self.window.rootViewController = nc;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

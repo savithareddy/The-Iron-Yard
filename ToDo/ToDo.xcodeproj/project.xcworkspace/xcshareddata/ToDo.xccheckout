@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>5998145F-17BC-4FDF-A401-4DBA229EBEC4</string>
+	<string>BC79DA5A-6948-4D0A-BFBA-E6595C21202C</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ToDo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>54744F25-8935-4278-B566-60F767D3AAAE</key>
+		<key>ABA6882B-A268-456A-9E9D-BFF5F47AAAA1</key>
 		<string>https://github.com/savithareddy/The-Iron-Yard.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>ToDo/ToDo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>54744F25-8935-4278-B566-60F767D3AAAE</key>
+		<key>ABA6882B-A268-456A-9E9D-BFF5F47AAAA1</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>54744F25-8935-4278-B566-60F767D3AAAE</string>
+	<string>ABA6882B-A268-456A-9E9D-BFF5F47AAAA1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>54744F25-8935-4278-B566-60F767D3AAAE</string>
+			<string>ABA6882B-A268-456A-9E9D-BFF5F47AAAA1</string>
 			<key>IDESourceControlWCCName</key>
 			<string>The-Iron-Yard</string>
 		</dict>
