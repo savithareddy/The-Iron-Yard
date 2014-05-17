@@ -295,8 +295,8 @@
 
                     [player1.physicsBody applyImpulse:CGVectorMake(0.0, 200.0)];// jumps and back to position
                
-//                    static const CGFloat thrust = 0.12;
-//                    [player1.physicsBody applyTorque:thrust]; // rolls
+                    static const CGFloat thrust = 0.12;
+                    [player1.physicsBody applyTorque:thrust]; // rolls
                                     }
                     break;
                 case 3:
