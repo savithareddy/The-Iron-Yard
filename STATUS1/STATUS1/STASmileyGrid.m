@@ -9,6 +9,7 @@
 #import "STASmileyGrid.h"
 #import "STADetailVC.h"
 #import "STASingleton.h"
+#import "STAphone3.h"
 
 @interface STASmileyGrid ()
 
@@ -19,9 +20,9 @@
     UIButton *Button1;
     UIView *frameView;
     UIImageView *square;
+    UIButton *back;
     UIButton *next;
 
-        
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -29,8 +30,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         
-        frameView = [[UIView alloc] initWithFrame:CGRectMake(60, 170, 200, 200)];
-        [self.view addSubview:frameView];
         
         NSArray *smilieImage = @[[UIImage imageNamed:@"smilies_1.png"],
                                  [UIImage imageNamed:@"smilies_2.png"],
@@ -57,8 +56,8 @@
         
             for (int col=0; col<3; col++) {
                 for (int row=0; row<3; row++) {
-                int valuex = (64 * row)+8;
-                int valuey = (64 * col)+8;
+                    int valuex = (64 * col)+64+8;
+                    int valuey = (64 * row)+ (BLOCKS *64)+8;
                 int tagValue = col*3 + row;
                 int tagValueRed = tagValue+9;;
 //                NSLog(@"%d",[STASingleton mainSingleton].color);
@@ -76,19 +75,29 @@
                }
 //                Button1.tag = tagValue;
                 [Button1 addTarget:self action:@selector(showSquare:) forControlEvents:UIControlEventTouchUpInside];
-                [frameView addSubview:Button1];
+                [self.view addSubview:Button1];
             }
         }
         square = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"squares"]];
         square.frame = CGRectMake(-8, -8, 64, 64);
         
-        next = [[UIButton alloc] initWithFrame:CGRectMake(136, 426, 48, 56)];
+        back = [[UIButton alloc] initWithFrame:CGRectMake(76, 426, 48, 56)];
+        UIImage *image11 = [UIImage imageNamed:@"backArrow.png"];
+        [back setImage:image11 forState:UIControlStateNormal];
+        [back addTarget:self action:@selector(openPreviousVC) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:back];
+        
+        next = [[UIButton alloc] initWithFrame:CGRectMake(196, 426, 48, 56)];
         UIImage *image10 = [UIImage imageNamed:@"arrow.png"];
         [next setImage:image10 forState:UIControlStateNormal];
         [next addTarget:self action:@selector(openNextVC) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:next];
     }
     return self;
+}
+-(void) openPreviousVC
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 -(void) showSquare:(UIButton *) sender
@@ -115,6 +124,10 @@
     [super didReceiveMemoryWarning];
     
 }
+
+//        frameView = [[UIView alloc] initWithFrame:CGRectMake(60, 180, 200, 200)];
+//        [self.view addSubview:frameView];
+
 
 //-(void) openDetail
 //{

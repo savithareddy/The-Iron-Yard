@@ -22,8 +22,8 @@
     UIButton *facebook;
     UIButton *fullFace;
     UIButton *done;
-    BOOL toggleIsOn;
     UIView *frameView;
+    UIButton *back;
     
     
 }
@@ -32,32 +32,23 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-//        frameView = [[UIView alloc] initWithFrame:CGRectMake(60, 170, 200, 200)];
-//        frameView.backgroundColor = [UIColor redColor];
-//        frameView.tintColor = [UIColor clearColor];
-//        [self.view addSubview:frameView];
 
-        twitter = [[UIButton alloc] initWithFrame:CGRectMake(64, 82, 48, 48)];
+        twitter = [[UIButton alloc] initWithFrame:CGRectMake(84, 82, 48, 48)];
         UIImage *imageY =[UIImage imageNamed:@"sm_twitter.png"];
         [twitter setImage:imageY forState:UIControlStateNormal];
         UIImage *imageX =[UIImage imageNamed:@"sm_twitter_g.png"];
         [twitter setImage:imageX forState:UIControlStateSelected];
+        twitter.tag = 0;
+//        twitter.adjustsImageWhenHighlighted =YES;
         [twitter addTarget:self action:@selector(showToggle:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:twitter];
         
-        google = [[UIButton alloc] initWithFrame:CGRectMake(128, 82, 48, 48)];
-        UIImage *image2 =[UIImage imageNamed:@"sm_google.png"];
-        [google setImage:image2 forState:UIControlStateNormal];
-        UIImage *image3 =[UIImage imageNamed:@"sm_google_g.png"];
-        [google setImage:image3 forState:UIControlStateSelected];
-        [google addTarget:self action:@selector(showToggle:) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:google];
-        
-        facebook = [[UIButton alloc] initWithFrame:CGRectMake(192, 82, 48, 48)];
+        facebook = [[UIButton alloc] initWithFrame:CGRectMake(172, 82, 48, 48)];
         UIImage *image4 =[UIImage imageNamed:@"sm_facebook.png"];
         [facebook setImage:image4 forState:UIControlStateNormal];
         UIImage *image5 =[UIImage imageNamed:@"sm_facebook_g.png"];
         [facebook setImage:image5 forState:UIControlStateSelected];
+        facebook.tag = 1;
         [facebook addTarget:self action:@selector(showToggle:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:facebook];
         
@@ -93,7 +84,13 @@
         }
         [self.view addSubview:fullFace];
         
-        done = [[UIButton alloc] initWithFrame:CGRectMake(136, 406, 48, 56)];
+        back = [[UIButton alloc] initWithFrame:CGRectMake(76, 426, 48, 56)];
+        UIImage *image11 = [UIImage imageNamed:@"backArrow.png"];
+        [back setImage:image11 forState:UIControlStateNormal];
+        [back addTarget:self action:@selector(openPreviousVC) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:back];
+        
+        done = [[UIButton alloc] initWithFrame:CGRectMake(196, 416, 48, 56)];
         UIImage *image10 = [UIImage imageNamed:@"check.png"];
         [done setImage:image10 forState:UIControlStateNormal];
         [done addTarget:self action:@selector(openDetail) forControlEvents:UIControlEventTouchUpInside];
@@ -102,16 +99,27 @@
     return self;
 }
 
+-(void) openPreviousVC
+{
+     [self.navigationController popViewControllerAnimated:YES];
+}
+
 -(void) showToggle:(UIButton *) sender
 {
     [sender setSelected:!sender.selected];
+    if (sender.tag == 0) {
+        //twittermethod
+         NSLog(@"Twitter is selected");
+    }else{
+        //facebook method
+        NSLog(@"facebook is selected");
+    }
+    
 }
 
 
 -(void) openDetail
 {
-    STAphone3 *phone = [[STAphone3 alloc] init];
-    [self.navigationController pushViewController:phone animated:YES];
     
 }
 
@@ -126,6 +134,19 @@
     [super didReceiveMemoryWarning];
     
 }
+
+//        frameView = [[UIView alloc] initWithFrame:CGRectMake(60, 170, 200, 200)];
+//        frameView.backgroundColor = [UIColor redColor];
+//        frameView.tintColor = [UIColor clearColor];
+//        [self.view addSubview:frameView];
+
+//        google = [[UIButton alloc] initWithFrame:CGRectMake(128, 82, 48, 48)];
+//        UIImage *image2 =[UIImage imageNamed:@"sm_google.png"];
+//        [google setImage:image2 forState:UIControlStateNormal];
+//        UIImage *image3 =[UIImage imageNamed:@"sm_google_g.png"];
+//        [google setImage:image3 forState:UIControlStateSelected];
+//        [google addTarget:self action:@selector(showToggle:) forControlEvents:UIControlEventTouchUpInside];
+//        [self.view addSubview:google];
 
 /*
 #pragma mark - Navigation

@@ -27,8 +27,9 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        frameView = [[UIView alloc] initWithFrame:CGRectMake(60, 170, 200, 200)];
-        [self.view addSubview:frameView];
+//        int frameX = 64;
+//        int frameY = (BLOCKS *64);
+       
         
         NSArray *colorsImage = @[[UIImage imageNamed:@"colors_1.png"],
                                 [UIImage imageNamed:@"colors_2.png"],
@@ -42,16 +43,16 @@
                                  ];
       
         
-            for (int col=0; col<3; col++) {
+         for (int col=0; col<3; col++) {
                 for (int row=0; row<3; row++) {
-                int valuex = (64 * row)+8;
-                int valuey = (64 * col)+8;
+                   int valuex = (64 * col)+64+8;
+                int valuey = (64 * row)+ (BLOCKS *64)+8;
                 int tagValue = col*3 + row;
                 Button = [[UIButton alloc] initWithFrame:CGRectMake(valuex, valuey, 48, 48)];
                 [Button setImage:colorsImage[tagValue] forState:UIControlStateNormal];
                 Button.tag = tagValue;
                 [Button addTarget:self action:@selector(showSquare:) forControlEvents:UIControlEventTouchUpInside];
-                [frameView addSubview:Button];
+                [self.view addSubview:Button];
 
             }
         }
@@ -94,6 +95,8 @@
     [super didReceiveMemoryWarning];
     
 }
+//frameView = [[UIView alloc] initWithFrame:CGRectMake(60, 180, 200, 200)];
+//[self.view addSubview:frameView];
 
 //-(void) showSquare:(UIButton *) sender
 //{

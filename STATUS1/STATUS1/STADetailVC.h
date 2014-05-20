@@ -10,6 +10,6 @@
 
 @interface STADetailVC : UIViewController
 
-@property (nonatomic) UIImage *detailImage;
+//@property (nonatomic) UIImage *detailImage;
 
 @end

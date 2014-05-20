@@ -13,7 +13,7 @@
 + (STASingleton *) mainSingleton;
 
 @property (nonatomic) NSInteger color;
-@property (nonatomic) NSInteger colorRed;
+//@property (nonatomic) NSInteger colorRed;
 @property (nonatomic) NSInteger detailColor;
 
 
