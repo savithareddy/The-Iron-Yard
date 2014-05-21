@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9163AB91192D22AD0053E38B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9163AB90192D22AD0053E38B /* CoreLocation.framework */; };
 		919E87D8192A3BEB00E8B94F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919E87D7192A3BEB00E8B94F /* Foundation.framework */; };
 		919E87DA192A3BEB00E8B94F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919E87D9192A3BEB00E8B94F /* CoreGraphics.framework */; };
 		919E87DC192A3BEB00E8B94F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919E87DB192A3BEB00E8B94F /* UIKit.framework */; };
@@ -65,7 +66,6 @@
 		919E8863192A427F00E8B94F /* splash_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 919E8836192A427F00E8B94F /* splash_4.png */; };
 		919E8864192A427F00E8B94F /* splash_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 919E8837192A427F00E8B94F /* splash_5.png */; };
 		919E886A192A47F500E8B94F /* STAphone3.m in Sources */ = {isa = PBXBuildFile; fileRef = 919E8869192A47F500E8B94F /* STAphone3.m */; };
-		919E886D192A480B00E8B94F /* STAphone4.m in Sources */ = {isa = PBXBuildFile; fileRef = 919E886C192A480B00E8B94F /* STAphone4.m */; };
 		919E8870192A636600E8B94F /* STASmileyGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 919E886F192A636600E8B94F /* STASmileyGrid.m */; };
 		919E8873192A7D8800E8B94F /* STADetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 919E8872192A7D8800E8B94F /* STADetailVC.m */; };
 		919E887E192A855B00E8B94F /* angry_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 919E8875192A855B00E8B94F /* angry_1.png */; };
@@ -117,6 +117,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9163AB90192D22AD0053E38B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		919E87D4192A3BEB00E8B94F /* STATUS1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STATUS1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		919E87D7192A3BEB00E8B94F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		919E87D9192A3BEB00E8B94F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -180,8 +181,6 @@
 		919E8837192A427F00E8B94F /* splash_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_5.png; sourceTree = "<group>"; };
 		919E8868192A47F500E8B94F /* STAphone3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAphone3.h; sourceTree = "<group>"; };
 		919E8869192A47F500E8B94F /* STAphone3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAphone3.m; sourceTree = "<group>"; };
-		919E886B192A480B00E8B94F /* STAphone4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAphone4.h; sourceTree = "<group>"; };
-		919E886C192A480B00E8B94F /* STAphone4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAphone4.m; sourceTree = "<group>"; };
 		919E886E192A636600E8B94F /* STASmileyGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STASmileyGrid.h; sourceTree = "<group>"; };
 		919E886F192A636600E8B94F /* STASmileyGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STASmileyGrid.m; sourceTree = "<group>"; };
 		919E8871192A7D8800E8B94F /* STADetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STADetailVC.h; sourceTree = "<group>"; };
@@ -245,6 +244,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9163AB91192D22AD0053E38B /* CoreLocation.framework in Frameworks */,
 				91A2D5E7192BAA5200C37878 /* Accounts.framework in Frameworks */,
 				91A2D5E5192BAA4500C37878 /* Twitter.framework in Frameworks */,
 				91A2D5E3192BAA3E00C37878 /* Social.framework in Frameworks */,
@@ -292,6 +292,7 @@
 		919E87D6192A3BEB00E8B94F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9163AB90192D22AD0053E38B /* CoreLocation.framework */,
 				91A2D5E6192BAA5200C37878 /* Accounts.framework */,
 				91A2D5E4192BAA4500C37878 /* Twitter.framework */,
 				91A2D5E2192BAA3E00C37878 /* Social.framework */,
@@ -313,12 +314,10 @@
 				919E8872192A7D8800E8B94F /* STADetailVC.m */,
 				919E886E192A636600E8B94F /* STASmileyGrid.h */,
 				919E886F192A636600E8B94F /* STASmileyGrid.m */,
-				919E87E6192A3BEB00E8B94F /* STAAppDelegate.h */,
-				919E87E7192A3BEB00E8B94F /* STAAppDelegate.m */,
 				919E8868192A47F500E8B94F /* STAphone3.h */,
 				919E8869192A47F500E8B94F /* STAphone3.m */,
-				919E886B192A480B00E8B94F /* STAphone4.h */,
-				919E886C192A480B00E8B94F /* STAphone4.m */,
+				919E87E6192A3BEB00E8B94F /* STAAppDelegate.h */,
+				919E87E7192A3BEB00E8B94F /* STAAppDelegate.m */,
 				919E87E9192A3BEB00E8B94F /* Images.xcassets */,
 				919E87DE192A3BEB00E8B94F /* Supporting Files */,
 			);
@@ -562,6 +561,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Savitha;
 				TargetAttributes = {
+					919E87D3192A3BEB00E8B94F = {
+						DevelopmentTeam = 2JYU749MD4;
+					};
 					919E87EE192A3BEB00E8B94F = {
 						TestTargetID = 919E87D3192A3BEB00E8B94F;
 					};
@@ -683,7 +685,6 @@
 				91A2D5DD192BA9CD00C37878 /* STTwitterOS.m in Sources */,
 				919E8873192A7D8800E8B94F /* STADetailVC.m in Sources */,
 				919E8870192A636600E8B94F /* STASmileyGrid.m in Sources */,
-				919E886D192A480B00E8B94F /* STAphone4.m in Sources */,
 				919E886A192A47F500E8B94F /* STAphone3.m in Sources */,
 				919E87E4192A3BEB00E8B94F /* main.m in Sources */,
 				91A2D5DC192BA9CD00C37878 /* STTwitterOAuth.m in Sources */,
@@ -810,10 +811,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "STATUS1/STATUS1-Prefix.pch";
 				INFOPLIST_FILE = "STATUS1/STATUS1-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -823,10 +827,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "STATUS1/STATUS1-Prefix.pch";
 				INFOPLIST_FILE = "STATUS1/STATUS1-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

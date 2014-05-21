@@ -8,8 +8,7 @@
 
 #import "STAAppDelegate.h"
 #import "STAphone3.h"
-#import "STAphone4.h"
-//#import "STTwitter.h"
+#import "STTwitter.h"
 
 @implementation STAAppDelegate
 
@@ -22,29 +21,6 @@
     nc.navigationBarHidden = YES;
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = nc;
-    
-    //on simulator says system cannot access twitter
-    //run this from the device then it shows ythe username of your account in the debug area
-//    STTwitterAPI *twitter = [STTwitterAPI twitterAPIOSWithFirstAccount];
-//    [twitter verifyCredentialsWithSuccessBlock:^(NSString *username) {
-//        NSLog(@"%@",username);
-//        
-//    } errorBlock:^(NSError *error) {
-//        NSLog(@"%@",error.userInfo);
-//    }];
-
-    
-////       if (self.window.frame.size.height == 480) {
-//           STAphone3 *phone1VC = [[STAphone3 alloc] init];
-//           UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:phone1VC];
-//           self.window.backgroundColor = [UIColor whiteColor];
-//           self.window.rootViewController = nc;
-////        }
-////       else{
-////           STAphone4 *phone2VC = [[STAphone4 alloc] init];
-////           self.window.backgroundColor = [UIColor yellowColor];
-////           self.window.rootViewController = phone2VC;
-////       }
     [self.window makeKeyAndVisible];
     return YES;
 }
