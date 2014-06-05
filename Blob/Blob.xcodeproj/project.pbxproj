@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91235A57193E00F5003B454B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91235A56193E00F5003B454B /* Foundation.framework */; };
+		91235A59193E00F5003B454B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91235A58193E00F5003B454B /* CoreGraphics.framework */; };
+		91235A5B193E00F5003B454B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91235A5A193E00F5003B454B /* UIKit.framework */; };
+		91235A5D193E00F5003B454B /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91235A5C193E00F5003B454B /* SpriteKit.framework */; };
+		91235A63193E00F5003B454B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91235A61193E00F5003B454B /* InfoPlist.strings */; };
+		91235A65193E00F5003B454B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91235A64193E00F5003B454B /* main.m */; };
+		91235A69193E00F5003B454B /* BLOBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91235A68193E00F5003B454B /* BLOBAppDelegate.m */; };
+		91235A6C193E00F5003B454B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91235A6A193E00F5003B454B /* Main.storyboard */; };
+		91235A6F193E00F5003B454B /* BLOBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91235A6E193E00F5003B454B /* BLOBViewController.m */; };
+		91235A72193E00F5003B454B /* BLOBMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 91235A71193E00F5003B454B /* BLOBMyScene.m */; };
+		91235A74193E00F5003B454B /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 91235A73193E00F5003B454B /* Spaceship.png */; };
+		91235A76193E00F5003B454B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91235A75193E00F5003B454B /* Images.xcassets */; };
+		91235A7D193E00F5003B454B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91235A7C193E00F5003B454B /* XCTest.framework */; };
+		91235A7E193E00F5003B454B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91235A56193E00F5003B454B /* Foundation.framework */; };
+		91235A7F193E00F5003B454B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91235A5A193E00F5003B454B /* UIKit.framework */; };
+		91235A87193E00F5003B454B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91235A85193E00F5003B454B /* InfoPlist.strings */; };
+		91235A89193E00F5003B454B /* BlobTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91235A88193E00F5003B454B /* BlobTests.m */; };
+		91235A9C193E0200003B454B /* blob_roll1.png in Resources */ = {isa = PBXBuildFile; fileRef = 91235A93193E0200003B454B /* blob_roll1.png */; };
+		91235A9D193E0200003B454B /* blob_roll2.png in Resources */ = {isa = PBXBuildFile; fileRef = 91235A94193E0200003B454B /* blob_roll2.png */; };
+		91235A9E193E0200003B454B /* blob_roll3.png in Resources */ = {isa = PBXBuildFile; fileRef = 91235A95193E0200003B454B /* blob_roll3.png */; };
+		91235A9F193E0200003B454B /* blob_roll4.png in Resources */ = {isa = PBXBuildFile; fileRef = 91235A96193E0200003B454B /* blob_roll4.png */; };
+		91235AA0193E0200003B454B /* blob_roll6.png in Resources */ = {isa = PBXBuildFile; fileRef = 91235A97193E0200003B454B /* blob_roll6.png */; };
+		91235AA1193E0200003B454B /* blob_roll7.png in Resources */ = {isa = PBXBuildFile; fileRef = 91235A98193E0200003B454B /* blob_roll7.png */; };
+		91235AA2193E0200003B454B /* hill1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91235A99193E0200003B454B /* hill1@2x.png */; };
+		91235AA3193E0200003B454B /* hill2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91235A9A193E0200003B454B /* hill2@2x.png */; };
+		91235AA4193E0200003B454B /* hill3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91235A9B193E0200003B454B /* hill3@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91235A80193E00F5003B454B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91235A4B193E00F5003B454B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91235A52193E00F5003B454B;
+			remoteInfo = Blob;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		91235A53193E00F5003B454B /* Blob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blob.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91235A56193E00F5003B454B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		91235A58193E00F5003B454B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		91235A5A193E00F5003B454B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		91235A5C193E00F5003B454B /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		91235A60193E00F5003B454B /* Blob-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Blob-Info.plist"; sourceTree = "<group>"; };
+		91235A62193E00F5003B454B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		91235A64193E00F5003B454B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		91235A66193E00F5003B454B /* Blob-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blob-Prefix.pch"; sourceTree = "<group>"; };
+		91235A67193E00F5003B454B /* BLOBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLOBAppDelegate.h; sourceTree = "<group>"; };
+		91235A68193E00F5003B454B /* BLOBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLOBAppDelegate.m; sourceTree = "<group>"; };
+		91235A6B193E00F5003B454B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		91235A6D193E00F5003B454B /* BLOBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLOBViewController.h; sourceTree = "<group>"; };
+		91235A6E193E00F5003B454B /* BLOBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLOBViewController.m; sourceTree = "<group>"; };
+		91235A70193E00F5003B454B /* BLOBMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLOBMyScene.h; sourceTree = "<group>"; };
+		91235A71193E00F5003B454B /* BLOBMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLOBMyScene.m; sourceTree = "<group>"; };
+		91235A73193E00F5003B454B /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		91235A75193E00F5003B454B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		91235A7B193E00F5003B454B /* BlobTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlobTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91235A7C193E00F5003B454B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		91235A84193E00F5003B454B /* BlobTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlobTests-Info.plist"; sourceTree = "<group>"; };
+		91235A86193E00F5003B454B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		91235A88193E00F5003B454B /* BlobTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlobTests.m; sourceTree = "<group>"; };
+		91235A93193E0200003B454B /* blob_roll1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blob_roll1.png; sourceTree = "<group>"; };
+		91235A94193E0200003B454B /* blob_roll2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blob_roll2.png; sourceTree = "<group>"; };
+		91235A95193E0200003B454B /* blob_roll3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blob_roll3.png; sourceTree = "<group>"; };
+		91235A96193E0200003B454B /* blob_roll4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blob_roll4.png; sourceTree = "<group>"; };
+		91235A97193E0200003B454B /* blob_roll6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blob_roll6.png; sourceTree = "<group>"; };
+		91235A98193E0200003B454B /* blob_roll7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blob_roll7.png; sourceTree = "<group>"; };
+		91235A99193E0200003B454B /* hill1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hill1@2x.png"; sourceTree = "<group>"; };
+		91235A9A193E0200003B454B /* hill2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hill2@2x.png"; sourceTree = "<group>"; };
+		91235A9B193E0200003B454B /* hill3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hill3@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91235A50193E00F5003B454B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91235A59193E00F5003B454B /* CoreGraphics.framework in Frameworks */,
+				91235A5B193E00F5003B454B /* UIKit.framework in Frameworks */,
+				91235A5D193E00F5003B454B /* SpriteKit.framework in Frameworks */,
+				91235A57193E00F5003B454B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91235A78193E00F5003B454B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91235A7D193E00F5003B454B /* XCTest.framework in Frameworks */,
+				91235A7F193E00F5003B454B /* UIKit.framework in Frameworks */,
+				91235A7E193E00F5003B454B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91235A4A193E00F5003B454B = {
+			isa = PBXGroup;
+			children = (
+				91235A5E193E00F5003B454B /* Blob */,
+				91235A82193E00F5003B454B /* BlobTests */,
+				91235A55193E00F5003B454B /* Frameworks */,
+				91235A54193E00F5003B454B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		91235A54193E00F5003B454B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91235A53193E00F5003B454B /* Blob.app */,
+				91235A7B193E00F5003B454B /* BlobTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91235A55193E00F5003B454B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91235A56193E00F5003B454B /* Foundation.framework */,
+				91235A58193E00F5003B454B /* CoreGraphics.framework */,
+				91235A5A193E00F5003B454B /* UIKit.framework */,
+				91235A5C193E00F5003B454B /* SpriteKit.framework */,
+				91235A7C193E00F5003B454B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91235A5E193E00F5003B454B /* Blob */ = {
+			isa = PBXGroup;
+			children = (
+				91235A92193E0200003B454B /* blob_assets */,
+				91235A67193E00F5003B454B /* BLOBAppDelegate.h */,
+				91235A68193E00F5003B454B /* BLOBAppDelegate.m */,
+				91235A6A193E00F5003B454B /* Main.storyboard */,
+				91235A6D193E00F5003B454B /* BLOBViewController.h */,
+				91235A6E193E00F5003B454B /* BLOBViewController.m */,
+				91235A70193E00F5003B454B /* BLOBMyScene.h */,
+				91235A71193E00F5003B454B /* BLOBMyScene.m */,
+				91235A73193E00F5003B454B /* Spaceship.png */,
+				91235A75193E00F5003B454B /* Images.xcassets */,
+				91235A5F193E00F5003B454B /* Supporting Files */,
+			);
+			path = Blob;
+			sourceTree = "<group>";
+		};
+		91235A5F193E00F5003B454B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				91235A60193E00F5003B454B /* Blob-Info.plist */,
+				91235A61193E00F5003B454B /* InfoPlist.strings */,
+				91235A64193E00F5003B454B /* main.m */,
+				91235A66193E00F5003B454B /* Blob-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91235A82193E00F5003B454B /* BlobTests */ = {
+			isa = PBXGroup;
+			children = (
+				91235A88193E00F5003B454B /* BlobTests.m */,
+				91235A83193E00F5003B454B /* Supporting Files */,
+			);
+			path = BlobTests;
+			sourceTree = "<group>";
+		};
+		91235A83193E00F5003B454B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				91235A84193E00F5003B454B /* BlobTests-Info.plist */,
+				91235A85193E00F5003B454B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91235A92193E0200003B454B /* blob_assets */ = {
+			isa = PBXGroup;
+			children = (
+				91235A93193E0200003B454B /* blob_roll1.png */,
+				91235A94193E0200003B454B /* blob_roll2.png */,
+				91235A95193E0200003B454B /* blob_roll3.png */,
+				91235A96193E0200003B454B /* blob_roll4.png */,
+				91235A97193E0200003B454B /* blob_roll6.png */,
+				91235A98193E0200003B454B /* blob_roll7.png */,
+				91235A99193E0200003B454B /* hill1@2x.png */,
+				91235A9A193E0200003B454B /* hill2@2x.png */,
+				91235A9B193E0200003B454B /* hill3@2x.png */,
+			);
+			path = blob_assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91235A52193E00F5003B454B /* Blob */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91235A8C193E00F5003B454B /* Build configuration list for PBXNativeTarget "Blob" */;
+			buildPhases = (
+				91235A4F193E00F5003B454B /* Sources */,
+				91235A50193E00F5003B454B /* Frameworks */,
+				91235A51193E00F5003B454B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Blob;
+			productName = Blob;
+			productReference = 91235A53193E00F5003B454B /* Blob.app */;
+			productType = "com.apple.product-type.application";
+		};
+		91235A7A193E00F5003B454B /* BlobTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91235A8F193E00F5003B454B /* Build configuration list for PBXNativeTarget "BlobTests" */;
+			buildPhases = (
+				91235A77193E00F5003B454B /* Sources */,
+				91235A78193E00F5003B454B /* Frameworks */,
+				91235A79193E00F5003B454B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91235A81193E00F5003B454B /* PBXTargetDependency */,
+			);
+			name = BlobTests;
+			productName = BlobTests;
+			productReference = 91235A7B193E00F5003B454B /* BlobTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91235A4B193E00F5003B454B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BLOB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Savitha;
+				TargetAttributes = {
+					91235A7A193E00F5003B454B = {
+						TestTargetID = 91235A52193E00F5003B454B;
+					};
+				};
+			};
+			buildConfigurationList = 91235A4E193E00F5003B454B /* Build configuration list for PBXProject "Blob" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91235A4A193E00F5003B454B;
+			productRefGroup = 91235A54193E00F5003B454B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91235A52193E00F5003B454B /* Blob */,
+				91235A7A193E00F5003B454B /* BlobTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91235A51193E00F5003B454B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91235A9D193E0200003B454B /* blob_roll2.png in Resources */,
+				91235AA1193E0200003B454B /* blob_roll7.png in Resources */,
+				91235A63193E00F5003B454B /* InfoPlist.strings in Resources */,
+				91235AA0193E0200003B454B /* blob_roll6.png in Resources */,
+				91235A9C193E0200003B454B /* blob_roll1.png in Resources */,
+				91235A76193E00F5003B454B /* Images.xcassets in Resources */,
+				91235AA2193E0200003B454B /* hill1@2x.png in Resources */,
+				91235AA3193E0200003B454B /* hill2@2x.png in Resources */,
+				91235AA4193E0200003B454B /* hill3@2x.png in Resources */,
+				91235A9F193E0200003B454B /* blob_roll4.png in Resources */,
+				91235A74193E00F5003B454B /* Spaceship.png in Resources */,
+				91235A9E193E0200003B454B /* blob_roll3.png in Resources */,
+				91235A6C193E00F5003B454B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91235A79193E00F5003B454B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91235A87193E00F5003B454B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91235A4F193E00F5003B454B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91235A65193E00F5003B454B /* main.m in Sources */,
+				91235A69193E00F5003B454B /* BLOBAppDelegate.m in Sources */,
+				91235A6F193E00F5003B454B /* BLOBViewController.m in Sources */,
+				91235A72193E00F5003B454B /* BLOBMyScene.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91235A77193E00F5003B454B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91235A89193E00F5003B454B /* BlobTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91235A81193E00F5003B454B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91235A52193E00F5003B454B /* Blob */;
+			targetProxy = 91235A80193E00F5003B454B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		91235A61193E00F5003B454B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91235A62193E00F5003B454B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		91235A6A193E00F5003B454B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91235A6B193E00F5003B454B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		91235A85193E00F5003B454B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91235A86193E00F5003B454B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91235A8A193E00F5003B454B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		91235A8B193E00F5003B454B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91235A8D193E00F5003B454B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Blob/Blob-Prefix.pch";
+				INFOPLIST_FILE = "Blob/Blob-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		91235A8E193E00F5003B454B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Blob/Blob-Prefix.pch";
+				INFOPLIST_FILE = "Blob/Blob-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		91235A90193E00F5003B454B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Blob.app/Blob";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Blob/Blob-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BlobTests/BlobTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		91235A91193E00F5003B454B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Blob.app/Blob";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Blob/Blob-Prefix.pch";
+				INFOPLIST_FILE = "BlobTests/BlobTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91235A4E193E00F5003B454B /* Build configuration list for PBXProject "Blob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91235A8A193E00F5003B454B /* Debug */,
+				91235A8B193E00F5003B454B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91235A8C193E00F5003B454B /* Build configuration list for PBXNativeTarget "Blob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91235A8D193E00F5003B454B /* Debug */,
+				91235A8E193E00F5003B454B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		91235A8F193E00F5003B454B /* Build configuration list for PBXNativeTarget "BlobTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91235A90193E00F5003B454B /* Debug */,
+				91235A91193E00F5003B454B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91235A4B193E00F5003B454B /* Project object */;
+}
