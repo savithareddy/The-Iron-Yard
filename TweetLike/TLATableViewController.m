@@ -92,7 +92,7 @@
 {
     if ([tweet isEqualToString:@""]) return; // required to refrain from submitting empty string
     
-     [self.tweetData insertObject:@{@"number": @"0",
+     [self.tweetData insertObject:@{@"number": @"20",
                                    @"tweet" : tweet
                                    } atIndex:0];
      [self.tableView reloadData];

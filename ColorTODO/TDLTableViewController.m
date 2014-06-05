@@ -295,7 +295,10 @@
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath //ontouching or tapping a cell works
 {
+    
     TDLTableViewCell *cell = (TDLTableViewCell *)  [tableView cellForRowAtIndexPath:indexPath];//get cell from tableview at row
+    
+    NSLog(@" SElecting a row today ");
 //    if(cell.bgView.frame.origin.x<0){
 //        
 //    }

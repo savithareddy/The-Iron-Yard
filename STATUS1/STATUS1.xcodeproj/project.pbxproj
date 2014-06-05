@@ -87,6 +87,7 @@
 		919E8898192A856600E8B94F /* yellow_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 919E888F192A856600E8B94F /* yellow_8.png */; };
 		919E8899192A856600E8B94F /* yellow_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 919E8890192A856600E8B94F /* yellow_9.png */; };
 		919E889C192AA81700E8B94F /* STASingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 919E889B192AA81700E8B94F /* STASingleton.m */; };
+		919FED99193769C700FC4EEF /* STADataArchitecture.m in Sources */ = {isa = PBXBuildFile; fileRef = 919FED98193769C700FC4EEF /* STADataArchitecture.m */; };
 		91A2D5D5192BA9CD00C37878 /* NSDateFormatter+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A2D5B9192BA9CD00C37878 /* NSDateFormatter+STTwitter.m */; };
 		91A2D5D6192BA9CD00C37878 /* NSError+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A2D5BB192BA9CD00C37878 /* NSError+STTwitter.m */; };
 		91A2D5D7192BA9CD00C37878 /* NSString+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A2D5BD192BA9CD00C37878 /* NSString+STTwitter.m */; };
@@ -205,6 +206,8 @@
 		919E8890192A856600E8B94F /* yellow_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_9.png; sourceTree = "<group>"; };
 		919E889A192AA81700E8B94F /* STASingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STASingleton.h; sourceTree = "<group>"; };
 		919E889B192AA81700E8B94F /* STASingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STASingleton.m; sourceTree = "<group>"; };
+		919FED97193769C700FC4EEF /* STADataArchitecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STADataArchitecture.h; sourceTree = "<group>"; };
+		919FED98193769C700FC4EEF /* STADataArchitecture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STADataArchitecture.m; sourceTree = "<group>"; };
 		91A2D5B8192BA9CD00C37878 /* NSDateFormatter+STTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+STTwitter.h"; sourceTree = "<group>"; };
 		91A2D5B9192BA9CD00C37878 /* NSDateFormatter+STTwitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+STTwitter.m"; sourceTree = "<group>"; };
 		91A2D5BA192BA9CD00C37878 /* NSError+STTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+STTwitter.h"; sourceTree = "<group>"; };
@@ -270,6 +273,8 @@
 		919E87CB192A3BEB00E8B94F = {
 			isa = PBXGroup;
 			children = (
+				919FED97193769C700FC4EEF /* STADataArchitecture.h */,
+				919FED98193769C700FC4EEF /* STADataArchitecture.m */,
 				919E8887192A856600E8B94F /* smilies */,
 				919E8874192A855B00E8B94F /* small_smilies */,
 				919E8806192A427F00E8B94F /* status_files */,
@@ -677,6 +682,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91A2D5DF192BA9CD00C37878 /* BAVPlistNode.m in Sources */,
+				919FED99193769C700FC4EEF /* STADataArchitecture.m in Sources */,
 				91A2D5DA192BA9CD00C37878 /* STTwitterAppOnly.m in Sources */,
 				91A2D5D8192BA9CD00C37878 /* STHTTPRequest+STTwitter.m in Sources */,
 				91A2D5DE192BA9CD00C37878 /* STTwitterOSRequest.m in Sources */,
