@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9196831819473A24005851FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9196831719473A24005851FC /* Foundation.framework */; };
+		9196831A19473A24005851FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9196831919473A24005851FC /* CoreGraphics.framework */; };
+		9196831C19473A24005851FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9196831B19473A24005851FC /* UIKit.framework */; };
+		9196832219473A24005851FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9196832019473A24005851FC /* InfoPlist.strings */; };
+		9196832419473A24005851FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9196832319473A24005851FC /* main.m */; };
+		9196832819473A24005851FC /* AMAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9196832719473A24005851FC /* AMAAppDelegate.m */; };
+		9196832B19473A24005851FC /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9196832919473A24005851FC /* Main_iPhone.storyboard */; };
+		9196832E19473A24005851FC /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9196832C19473A24005851FC /* Main_iPad.storyboard */; };
+		9196833119473A24005851FC /* AMAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9196833019473A24005851FC /* AMAViewController.m */; };
+		9196833319473A24005851FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9196833219473A24005851FC /* Images.xcassets */; };
+		9196833A19473A24005851FC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9196833919473A24005851FC /* XCTest.framework */; };
+		9196833B19473A24005851FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9196831719473A24005851FC /* Foundation.framework */; };
+		9196833C19473A24005851FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9196831B19473A24005851FC /* UIKit.framework */; };
+		9196834419473A24005851FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9196834219473A24005851FC /* InfoPlist.strings */; };
+		9196834619473A24005851FC /* AdMonkeyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9196834519473A24005851FC /* AdMonkeyTests.m */; };
+		9196835019473A67005851FC /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9196834F19473A67005851FC /* iAd.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9196833D19473A24005851FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9196830C19473A24005851FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9196831319473A24005851FC;
+			remoteInfo = AdMonkey;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9196831419473A24005851FC /* AdMonkey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdMonkey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9196831719473A24005851FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9196831919473A24005851FC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9196831B19473A24005851FC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9196831F19473A24005851FC /* AdMonkey-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdMonkey-Info.plist"; sourceTree = "<group>"; };
+		9196832119473A24005851FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9196832319473A24005851FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9196832519473A24005851FC /* AdMonkey-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdMonkey-Prefix.pch"; sourceTree = "<group>"; };
+		9196832619473A24005851FC /* AMAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMAAppDelegate.h; sourceTree = "<group>"; };
+		9196832719473A24005851FC /* AMAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMAAppDelegate.m; sourceTree = "<group>"; };
+		9196832A19473A24005851FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		9196832D19473A24005851FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		9196832F19473A24005851FC /* AMAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMAViewController.h; sourceTree = "<group>"; };
+		9196833019473A24005851FC /* AMAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMAViewController.m; sourceTree = "<group>"; };
+		9196833219473A24005851FC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9196833819473A24005851FC /* AdMonkeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdMonkeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9196833919473A24005851FC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9196834119473A24005851FC /* AdMonkeyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdMonkeyTests-Info.plist"; sourceTree = "<group>"; };
+		9196834319473A24005851FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9196834519473A24005851FC /* AdMonkeyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdMonkeyTests.m; sourceTree = "<group>"; };
+		9196834F19473A67005851FC /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9196831119473A24005851FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9196835019473A67005851FC /* iAd.framework in Frameworks */,
+				9196831A19473A24005851FC /* CoreGraphics.framework in Frameworks */,
+				9196831C19473A24005851FC /* UIKit.framework in Frameworks */,
+				9196831819473A24005851FC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9196833519473A24005851FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9196833A19473A24005851FC /* XCTest.framework in Frameworks */,
+				9196833C19473A24005851FC /* UIKit.framework in Frameworks */,
+				9196833B19473A24005851FC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9196830B19473A24005851FC = {
+			isa = PBXGroup;
+			children = (
+				9196831D19473A24005851FC /* AdMonkey */,
+				9196833F19473A24005851FC /* AdMonkeyTests */,
+				9196831619473A24005851FC /* Frameworks */,
+				9196831519473A24005851FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9196831519473A24005851FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9196831419473A24005851FC /* AdMonkey.app */,
+				9196833819473A24005851FC /* AdMonkeyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9196831619473A24005851FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9196834F19473A67005851FC /* iAd.framework */,
+				9196831719473A24005851FC /* Foundation.framework */,
+				9196831919473A24005851FC /* CoreGraphics.framework */,
+				9196831B19473A24005851FC /* UIKit.framework */,
+				9196833919473A24005851FC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9196831D19473A24005851FC /* AdMonkey */ = {
+			isa = PBXGroup;
+			children = (
+				9196832619473A24005851FC /* AMAAppDelegate.h */,
+				9196832719473A24005851FC /* AMAAppDelegate.m */,
+				9196832919473A24005851FC /* Main_iPhone.storyboard */,
+				9196832C19473A24005851FC /* Main_iPad.storyboard */,
+				9196832F19473A24005851FC /* AMAViewController.h */,
+				9196833019473A24005851FC /* AMAViewController.m */,
+				9196833219473A24005851FC /* Images.xcassets */,
+				9196831E19473A24005851FC /* Supporting Files */,
+			);
+			path = AdMonkey;
+			sourceTree = "<group>";
+		};
+		9196831E19473A24005851FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9196831F19473A24005851FC /* AdMonkey-Info.plist */,
+				9196832019473A24005851FC /* InfoPlist.strings */,
+				9196832319473A24005851FC /* main.m */,
+				9196832519473A24005851FC /* AdMonkey-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9196833F19473A24005851FC /* AdMonkeyTests */ = {
+			isa = PBXGroup;
+			children = (
+				9196834519473A24005851FC /* AdMonkeyTests.m */,
+				9196834019473A24005851FC /* Supporting Files */,
+			);
+			path = AdMonkeyTests;
+			sourceTree = "<group>";
+		};
+		9196834019473A24005851FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9196834119473A24005851FC /* AdMonkeyTests-Info.plist */,
+				9196834219473A24005851FC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9196831319473A24005851FC /* AdMonkey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9196834919473A24005851FC /* Build configuration list for PBXNativeTarget "AdMonkey" */;
+			buildPhases = (
+				9196831019473A24005851FC /* Sources */,
+				9196831119473A24005851FC /* Frameworks */,
+				9196831219473A24005851FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdMonkey;
+			productName = AdMonkey;
+			productReference = 9196831419473A24005851FC /* AdMonkey.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9196833719473A24005851FC /* AdMonkeyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9196834C19473A24005851FC /* Build configuration list for PBXNativeTarget "AdMonkeyTests" */;
+			buildPhases = (
+				9196833419473A24005851FC /* Sources */,
+				9196833519473A24005851FC /* Frameworks */,
+				9196833619473A24005851FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9196833E19473A24005851FC /* PBXTargetDependency */,
+			);
+			name = AdMonkeyTests;
+			productName = AdMonkeyTests;
+			productReference = 9196833819473A24005851FC /* AdMonkeyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9196830C19473A24005851FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AMA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Savitha;
+				TargetAttributes = {
+					9196833719473A24005851FC = {
+						TestTargetID = 9196831319473A24005851FC;
+					};
+				};
+			};
+			buildConfigurationList = 9196830F19473A24005851FC /* Build configuration list for PBXProject "AdMonkey" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9196830B19473A24005851FC;
+			productRefGroup = 9196831519473A24005851FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9196831319473A24005851FC /* AdMonkey */,
+				9196833719473A24005851FC /* AdMonkeyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9196831219473A24005851FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9196832E19473A24005851FC /* Main_iPad.storyboard in Resources */,
+				9196833319473A24005851FC /* Images.xcassets in Resources */,
+				9196832B19473A24005851FC /* Main_iPhone.storyboard in Resources */,
+				9196832219473A24005851FC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9196833619473A24005851FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9196834419473A24005851FC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9196831019473A24005851FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9196832819473A24005851FC /* AMAAppDelegate.m in Sources */,
+				9196833119473A24005851FC /* AMAViewController.m in Sources */,
+				9196832419473A24005851FC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9196833419473A24005851FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9196834619473A24005851FC /* AdMonkeyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9196833E19473A24005851FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9196831319473A24005851FC /* AdMonkey */;
+			targetProxy = 9196833D19473A24005851FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9196832019473A24005851FC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9196832119473A24005851FC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9196832919473A24005851FC /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9196832A19473A24005851FC /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		9196832C19473A24005851FC /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9196832D19473A24005851FC /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		9196834219473A24005851FC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9196834319473A24005851FC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9196834719473A24005851FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9196834819473A24005851FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9196834A19473A24005851FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AdMonkey/AdMonkey-Prefix.pch";
+				INFOPLIST_FILE = "AdMonkey/AdMonkey-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9196834B19473A24005851FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AdMonkey/AdMonkey-Prefix.pch";
+				INFOPLIST_FILE = "AdMonkey/AdMonkey-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9196834D19473A24005851FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AdMonkey.app/AdMonkey";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AdMonkey/AdMonkey-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AdMonkeyTests/AdMonkeyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9196834E19473A24005851FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AdMonkey.app/AdMonkey";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AdMonkey/AdMonkey-Prefix.pch";
+				INFOPLIST_FILE = "AdMonkeyTests/AdMonkeyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9196830F19473A24005851FC /* Build configuration list for PBXProject "AdMonkey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9196834719473A24005851FC /* Debug */,
+				9196834819473A24005851FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9196834919473A24005851FC /* Build configuration list for PBXNativeTarget "AdMonkey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9196834A19473A24005851FC /* Debug */,
+				9196834B19473A24005851FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9196834C19473A24005851FC /* Build configuration list for PBXNativeTarget "AdMonkeyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9196834D19473A24005851FC /* Debug */,
+				9196834E19473A24005851FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9196830C19473A24005851FC /* Project object */;
+}
