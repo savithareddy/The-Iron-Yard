@@ -11,13 +11,14 @@
 
 #import "GLACollectionViewController.h"
 
-@interface GLACollectionViewController () <UICollectionViewDelegateFlowLayout>
+@interface GLACollectionViewController () <UICollectionViewDelegateFlowLayout,UICollectionViewDataSource,UICollectionViewDelegate>
 
 @end
 
 @implementation GLACollectionViewController
 {
     NSArray *movies;
+    UILabel *title;
 }
 
 -(id)initWithCollectionViewLayout:(UICollectionViewFlowLayout *)layout
@@ -41,10 +42,16 @@
                    @"Weekend",
                    @"Big",
                    @"Batman",
-                   @"Pi"];
+                   @"Pi",@"Congo",
+                   @"Godzilla",
+                   @"Weekend",
+                   @"Big",
+                   @"Batman"];
     }
     return self;
 }
+
+
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     return CGSizeMake((SCREEN_WIDTH-50)/3.0, (SCREEN_HEIGHT-50)/4.0);
@@ -68,10 +75,11 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
 UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, cell.frame.size.width-20, 30)];
+    title = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, cell.frame.size.width-20, 30)];
     title.text = movies [indexPath.row];
     title.textColor = [UIColor darkGrayColor];
-    [cell.contentView addSubview:title];
+    [cell addSubview:title];
+    
     cell.backgroundColor = [UIColor whiteColor];
     return cell;
 }
@@ -79,6 +87,7 @@ UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentif
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning

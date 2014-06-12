@@ -33,6 +33,7 @@
 		91235A43193CB29F003B454B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91235A42193CB29F003B454B /* StoreKit.framework */; };
 		91235A45193CB2AE003B454B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91235A44193CB2AE003B454B /* SystemConfiguration.framework */; };
 		91235A49193CBDD3003B454B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91235A48193CBDD3003B454B /* Parse.framework */; };
+		91A133CF1946223C003C255B /* TPHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A133CE1946223C003C255B /* TPHViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		91235A42193CB29F003B454B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		91235A44193CB2AE003B454B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		91235A48193CBDD3003B454B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		91A133CD1946223C003C255B /* TPHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPHViewController.h; sourceTree = "<group>"; };
+		91A133CE1946223C003C255B /* TPHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPHViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,8 @@
 			children = (
 				91235A0C193CB1C3003B454B /* TPHAppDelegate.h */,
 				91235A0D193CB1C3003B454B /* TPHAppDelegate.m */,
+				91A133CD1946223C003C255B /* TPHViewController.h */,
+				91A133CE1946223C003C255B /* TPHViewController.m */,
 				91235A0F193CB1C3003B454B /* Images.xcassets */,
 				91235A04193CB1C3003B454B /* Supporting Files */,
 			);
@@ -299,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A133CF1946223C003C255B /* TPHViewController.m in Sources */,
 				91235A0A193CB1C3003B454B /* main.m in Sources */,
 				91235A0E193CB1C3003B454B /* TPHAppDelegate.m in Sources */,
 			);
