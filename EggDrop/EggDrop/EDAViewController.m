@@ -60,7 +60,7 @@
     [self.view addSubview:timerLabel];
     [self timerMethod];
     
-    lives = [[UILabel alloc] initWithFrame:CGRectMake(240, 70, 80, 50)];
+    lives = [[UILabel alloc] initWithFrame:CGRectMake(240, 60, 80, 50)];
     lives.textColor = [UIColor whiteColor];
     lives.text = @"3";
     [self.view addSubview:lives];
