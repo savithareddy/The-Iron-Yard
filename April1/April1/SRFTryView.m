@@ -34,7 +34,7 @@
 
 -(void)changeTitleWithName:(NSString *)name andSomething:(NSString *)something
 {
-    self.coolTitle = [NSString stringWithFormat:@"%@ %@", name, something]
+//    self.whatIsMyTitle = [NSString stringWithFormat:@"%@ %@", name, something]
 }
 
 @end
