@@ -1,23 +1,56 @@
 //
-//  ALAAppDelegate.m
-//  check
+//  NTDAppDelegate.m
+//  NavToolDraw
 //
-//  Created by Savitha Reddy on 5/10/14.
+//  Created by Savitha Reddy on 5/15/14.
 //  Copyright (c) 2014 Savitha. All rights reserved.
 //
 
-#import "ALAAppDelegate.h"
+#import "NTDAppDelegate.h"
+#import "NTDViewController.h"
 
-@implementation ALAAppDelegate
+@implementation NTDAppDelegate
+{
+    NTDViewController *vc;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    vc = [[NTDViewController alloc]init];
+    self.window.rootViewController = vc;
+    self.window.backgroundColor = [UIColor orangeColor];
     [self.window makeKeyAndVisible];
     return YES;
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
