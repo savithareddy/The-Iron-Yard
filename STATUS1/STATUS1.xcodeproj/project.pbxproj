@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910FC89319786DBE00C1C950 /* backArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 910FC89219786DBE00C1C950 /* backArrow.png */; };
 		9163AB91192D22AD0053E38B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9163AB90192D22AD0053E38B /* CoreLocation.framework */; };
 		919E87D8192A3BEB00E8B94F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919E87D7192A3BEB00E8B94F /* Foundation.framework */; };
 		919E87DA192A3BEB00E8B94F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919E87D9192A3BEB00E8B94F /* CoreGraphics.framework */; };
@@ -104,7 +105,6 @@
 		91A2D5E3192BAA3E00C37878 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A2D5E2192BAA3E00C37878 /* Social.framework */; };
 		91A2D5E5192BAA4500C37878 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A2D5E4192BAA4500C37878 /* Twitter.framework */; };
 		91A2D5E7192BAA5200C37878 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A2D5E6192BAA5200C37878 /* Accounts.framework */; };
-		91A2D658192BD10F00C37878 /* backArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 91A2D657192BD10F00C37878 /* backArrow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +118,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		910FC89219786DBE00C1C950 /* backArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backArrow.png; path = ../../backArrow.png; sourceTree = "<group>"; };
 		9163AB90192D22AD0053E38B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		919E87D4192A3BEB00E8B94F /* STATUS1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STATUS1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		919E87D7192A3BEB00E8B94F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -239,7 +240,6 @@
 		91A2D5E2192BAA3E00C37878 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		91A2D5E4192BAA4500C37878 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		91A2D5E6192BAA5200C37878 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
-		91A2D657192BD10F00C37878 /* backArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backArrow.png; path = ../../../backArrow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,7 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				919E8808192A427F00E8B94F /* arrow.png */,
-				91A2D657192BD10F00C37878 /* backArrow.png */,
+				910FC89219786DBE00C1C950 /* backArrow.png */,
 				919E8809192A427F00E8B94F /* big_smilie.png */,
 				919E880A192A427F00E8B94F /* check.png */,
 				919E880B192A427F00E8B94F /* colors_1.png */,
@@ -597,13 +597,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91A2D658192BD10F00C37878 /* backArrow.png in Resources */,
 				919E8859192A427F00E8B94F /* Icon.png in Resources */,
 				919E883C192A427F00E8B94F /* colors_2.png in Resources */,
 				919E884D192A427F00E8B94F /* smilies_4.png in Resources */,
 				919E8881192A855B00E8B94F /* angry_4.png in Resources */,
 				919E8862192A427F00E8B94F /* view_5_3.png in Resources */,
 				919E8893192A856600E8B94F /* yellow_3.png in Resources */,
+				910FC89319786DBE00C1C950 /* backArrow.png in Resources */,
 				919E8897192A856600E8B94F /* yellow_7.png in Resources */,
 				919E8848192A427F00E8B94F /* sm_twitter.png in Resources */,
 				919E8895192A856600E8B94F /* yellow_5.png in Resources */,
