@@ -7,7 +7,7 @@
 //
 
 #import "TPAViewController.h"
-#import "STTwitter.h"
+#import <STTwitter.h/STTwit
 
 @interface TPAViewController ()
 
