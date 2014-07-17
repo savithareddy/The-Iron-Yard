@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		919E878619292ED300E8B94F /* NTBColorsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 919E878519292ED300E8B94F /* NTBColorsVC.m */; };
+		919E878919292EE700E8B94F /* NTBNumbersVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 919E878819292EE700E8B94F /* NTBNumbersVC.m */; };
+		919E878C1929379100E8B94F /* NTBSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 919E878B1929379100E8B94F /* NTBSingleton.m */; };
+		919E878F192945FB00E8B94F /* NTBTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 919E878E192945FB00E8B94F /* NTBTabView.m */; };
+		91B2D98E1928057100E6658B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B2D98D1928057100E6658B /* Foundation.framework */; };
+		91B2D9901928057100E6658B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B2D98F1928057100E6658B /* CoreGraphics.framework */; };
+		91B2D9921928057100E6658B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B2D9911928057100E6658B /* UIKit.framework */; };
+		91B2D9981928057100E6658B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91B2D9961928057100E6658B /* InfoPlist.strings */; };
+		91B2D99A1928057100E6658B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B2D9991928057100E6658B /* main.m */; };
+		91B2D99E1928057100E6658B /* NTBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B2D99D1928057100E6658B /* NTBAppDelegate.m */; };
+		91B2D9A01928057100E6658B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91B2D99F1928057100E6658B /* Images.xcassets */; };
+		91B2D9A71928057100E6658B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B2D9A61928057100E6658B /* XCTest.framework */; };
+		91B2D9A81928057100E6658B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B2D98D1928057100E6658B /* Foundation.framework */; };
+		91B2D9A91928057100E6658B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B2D9911928057100E6658B /* UIKit.framework */; };
+		91B2D9B11928057100E6658B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91B2D9AF1928057100E6658B /* InfoPlist.strings */; };
+		91B2D9B31928057100E6658B /* NavToolBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B2D9B21928057100E6658B /* NavToolBarTests.m */; };
+		91B2D9BE192806D200E6658B /* NTBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B2D9BD192806D200E6658B /* NTBTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91B2D9AA1928057100E6658B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91B2D9821928057100E6658B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91B2D9891928057100E6658B;
+			remoteInfo = NavToolBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		919E878419292ED300E8B94F /* NTBColorsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTBColorsVC.h; sourceTree = "<group>"; };
+		919E878519292ED300E8B94F /* NTBColorsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTBColorsVC.m; sourceTree = "<group>"; };
+		919E878719292EE700E8B94F /* NTBNumbersVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTBNumbersVC.h; sourceTree = "<group>"; };
+		919E878819292EE700E8B94F /* NTBNumbersVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTBNumbersVC.m; sourceTree = "<group>"; };
+		919E878A1929379100E8B94F /* NTBSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTBSingleton.h; sourceTree = "<group>"; };
+		919E878B1929379100E8B94F /* NTBSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTBSingleton.m; sourceTree = "<group>"; };
+		919E878D192945FB00E8B94F /* NTBTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTBTabView.h; sourceTree = "<group>"; };
+		919E878E192945FB00E8B94F /* NTBTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTBTabView.m; sourceTree = "<group>"; };
+		91B2D98A1928057100E6658B /* NavToolBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavToolBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B2D98D1928057100E6658B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		91B2D98F1928057100E6658B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		91B2D9911928057100E6658B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		91B2D9951928057100E6658B /* NavToolBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NavToolBar-Info.plist"; sourceTree = "<group>"; };
+		91B2D9971928057100E6658B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		91B2D9991928057100E6658B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		91B2D99B1928057100E6658B /* NavToolBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NavToolBar-Prefix.pch"; sourceTree = "<group>"; };
+		91B2D99C1928057100E6658B /* NTBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTBAppDelegate.h; sourceTree = "<group>"; };
+		91B2D99D1928057100E6658B /* NTBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTBAppDelegate.m; sourceTree = "<group>"; };
+		91B2D99F1928057100E6658B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		91B2D9A51928057100E6658B /* NavToolBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavToolBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B2D9A61928057100E6658B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		91B2D9AE1928057100E6658B /* NavToolBarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NavToolBarTests-Info.plist"; sourceTree = "<group>"; };
+		91B2D9B01928057100E6658B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		91B2D9B21928057100E6658B /* NavToolBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavToolBarTests.m; sourceTree = "<group>"; };
+		91B2D9BC192806D200E6658B /* NTBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTBTableViewController.h; sourceTree = "<group>"; };
+		91B2D9BD192806D200E6658B /* NTBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTBTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91B2D9871928057100E6658B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B2D9901928057100E6658B /* CoreGraphics.framework in Frameworks */,
+				91B2D9921928057100E6658B /* UIKit.framework in Frameworks */,
+				91B2D98E1928057100E6658B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91B2D9A21928057100E6658B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B2D9A71928057100E6658B /* XCTest.framework in Frameworks */,
+				91B2D9A91928057100E6658B /* UIKit.framework in Frameworks */,
+				91B2D9A81928057100E6658B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91B2D9811928057100E6658B = {
+			isa = PBXGroup;
+			children = (
+				919E878719292EE700E8B94F /* NTBNumbersVC.h */,
+				919E878819292EE700E8B94F /* NTBNumbersVC.m */,
+				919E878419292ED300E8B94F /* NTBColorsVC.h */,
+				919E878519292ED300E8B94F /* NTBColorsVC.m */,
+				91B2D9BC192806D200E6658B /* NTBTableViewController.h */,
+				91B2D9BD192806D200E6658B /* NTBTableViewController.m */,
+				919E878A1929379100E8B94F /* NTBSingleton.h */,
+				919E878B1929379100E8B94F /* NTBSingleton.m */,
+				91B2D9931928057100E6658B /* NavToolBar */,
+				91B2D9AC1928057100E6658B /* NavToolBarTests */,
+				91B2D98C1928057100E6658B /* Frameworks */,
+				91B2D98B1928057100E6658B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		91B2D98B1928057100E6658B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91B2D98A1928057100E6658B /* NavToolBar.app */,
+				91B2D9A51928057100E6658B /* NavToolBarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91B2D98C1928057100E6658B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91B2D98D1928057100E6658B /* Foundation.framework */,
+				91B2D98F1928057100E6658B /* CoreGraphics.framework */,
+				91B2D9911928057100E6658B /* UIKit.framework */,
+				91B2D9A61928057100E6658B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91B2D9931928057100E6658B /* NavToolBar */ = {
+			isa = PBXGroup;
+			children = (
+				91B2D99C1928057100E6658B /* NTBAppDelegate.h */,
+				91B2D99D1928057100E6658B /* NTBAppDelegate.m */,
+				919E878D192945FB00E8B94F /* NTBTabView.h */,
+				919E878E192945FB00E8B94F /* NTBTabView.m */,
+				91B2D99F1928057100E6658B /* Images.xcassets */,
+				91B2D9941928057100E6658B /* Supporting Files */,
+			);
+			path = NavToolBar;
+			sourceTree = "<group>";
+		};
+		91B2D9941928057100E6658B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				91B2D9951928057100E6658B /* NavToolBar-Info.plist */,
+				91B2D9961928057100E6658B /* InfoPlist.strings */,
+				91B2D9991928057100E6658B /* main.m */,
+				91B2D99B1928057100E6658B /* NavToolBar-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91B2D9AC1928057100E6658B /* NavToolBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				91B2D9B21928057100E6658B /* NavToolBarTests.m */,
+				91B2D9AD1928057100E6658B /* Supporting Files */,
+			);
+			path = NavToolBarTests;
+			sourceTree = "<group>";
+		};
+		91B2D9AD1928057100E6658B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				91B2D9AE1928057100E6658B /* NavToolBarTests-Info.plist */,
+				91B2D9AF1928057100E6658B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91B2D9891928057100E6658B /* NavToolBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91B2D9B61928057100E6658B /* Build configuration list for PBXNativeTarget "NavToolBar" */;
+			buildPhases = (
+				91B2D9861928057100E6658B /* Sources */,
+				91B2D9871928057100E6658B /* Frameworks */,
+				91B2D9881928057100E6658B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NavToolBar;
+			productName = NavToolBar;
+			productReference = 91B2D98A1928057100E6658B /* NavToolBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		91B2D9A41928057100E6658B /* NavToolBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91B2D9B91928057100E6658B /* Build configuration list for PBXNativeTarget "NavToolBarTests" */;
+			buildPhases = (
+				91B2D9A11928057100E6658B /* Sources */,
+				91B2D9A21928057100E6658B /* Frameworks */,
+				91B2D9A31928057100E6658B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91B2D9AB1928057100E6658B /* PBXTargetDependency */,
+			);
+			name = NavToolBarTests;
+			productName = NavToolBarTests;
+			productReference = 91B2D9A51928057100E6658B /* NavToolBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91B2D9821928057100E6658B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NTB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Savitha;
+				TargetAttributes = {
+					91B2D9A41928057100E6658B = {
+						TestTargetID = 91B2D9891928057100E6658B;
+					};
+				};
+			};
+			buildConfigurationList = 91B2D9851928057100E6658B /* Build configuration list for PBXProject "NavToolBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 91B2D9811928057100E6658B;
+			productRefGroup = 91B2D98B1928057100E6658B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91B2D9891928057100E6658B /* NavToolBar */,
+				91B2D9A41928057100E6658B /* NavToolBarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91B2D9881928057100E6658B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B2D9981928057100E6658B /* InfoPlist.strings in Resources */,
+				91B2D9A01928057100E6658B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91B2D9A31928057100E6658B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B2D9B11928057100E6658B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91B2D9861928057100E6658B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B2D99A1928057100E6658B /* main.m in Sources */,
+				919E878F192945FB00E8B94F /* NTBTabView.m in Sources */,
+				919E878919292EE700E8B94F /* NTBNumbersVC.m in Sources */,
+				919E878C1929379100E8B94F /* NTBSingleton.m in Sources */,
+				91B2D99E1928057100E6658B /* NTBAppDelegate.m in Sources */,
+				91B2D9BE192806D200E6658B /* NTBTableViewController.m in Sources */,
+				919E878619292ED300E8B94F /* NTBColorsVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91B2D9A11928057100E6658B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B2D9B31928057100E6658B /* NavToolBarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91B2D9AB1928057100E6658B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91B2D9891928057100E6658B /* NavToolBar */;
+			targetProxy = 91B2D9AA1928057100E6658B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		91B2D9961928057100E6658B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91B2D9971928057100E6658B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		91B2D9AF1928057100E6658B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91B2D9B01928057100E6658B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91B2D9B41928057100E6658B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		91B2D9B51928057100E6658B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91B2D9B71928057100E6658B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NavToolBar/NavToolBar-Prefix.pch";
+				INFOPLIST_FILE = "NavToolBar/NavToolBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		91B2D9B81928057100E6658B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NavToolBar/NavToolBar-Prefix.pch";
+				INFOPLIST_FILE = "NavToolBar/NavToolBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		91B2D9BA1928057100E6658B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NavToolBar.app/NavToolBar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NavToolBar/NavToolBar-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NavToolBarTests/NavToolBarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		91B2D9BB1928057100E6658B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NavToolBar.app/NavToolBar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NavToolBar/NavToolBar-Prefix.pch";
+				INFOPLIST_FILE = "NavToolBarTests/NavToolBarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91B2D9851928057100E6658B /* Build configuration list for PBXProject "NavToolBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91B2D9B41928057100E6658B /* Debug */,
+				91B2D9B51928057100E6658B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91B2D9B61928057100E6658B /* Build configuration list for PBXNativeTarget "NavToolBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91B2D9B71928057100E6658B /* Debug */,
+				91B2D9B81928057100E6658B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91B2D9B91928057100E6658B /* Build configuration list for PBXNativeTarget "NavToolBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91B2D9BA1928057100E6658B /* Debug */,
+				91B2D9BB1928057100E6658B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91B2D9821928057100E6658B /* Project object */;
+}
