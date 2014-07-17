@@ -1,6 +1,6 @@
 //
-//  StuffedAnimalBattleTests.m
-//  StuffedAnimalBattleTests
+//  NavToolDrawTests.m
+//  NavToolDrawTests
 //
 //  Created by Savitha Reddy on 5/15/14.
 //  Copyright (c) 2014 Savitha. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface StuffedAnimalBattleTests : XCTestCase
+@interface NavToolDrawTests : XCTestCase
 
 @end
 
-@implementation StuffedAnimalBattleTests
+@implementation NavToolDrawTests
 
 - (void)setUp
 {
