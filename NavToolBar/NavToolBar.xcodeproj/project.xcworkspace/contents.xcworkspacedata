@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Blowing Bubbles.xcodeproj">
+      location = "self:NavToolBar.xcodeproj">
    </FileRef>
 </Workspace>
