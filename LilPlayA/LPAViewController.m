@@ -75,7 +75,7 @@
     
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, (unsigned long)NULL), ^{
-        NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/147445565/download?client_id=2d87025c8392069f828c446b965862e3"];
+        NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/Everything/147445565/download?client_id=a4ba461f5db7b5096c7aec0264e9ab96"];
         NSData *data = [NSData dataWithContentsOfURL:url];
         dispatch_async(dispatch_get_main_queue(), ^{
             avPlayer = [[AVAudioPlayer alloc] initWithData:data error:nil];

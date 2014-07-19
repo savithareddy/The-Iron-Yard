@@ -8,6 +8,7 @@
 
 #import "TPAViewController.h"
 #import <STTwitter.h/STTwit
+// requires STTwitter framework to be added 
 
 @interface TPAViewController ()
 
